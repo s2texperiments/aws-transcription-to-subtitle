@@ -1,5 +1,5 @@
 {
-  "name": "s2t-aws-transcription-to-srt",
+  "name": "aws-transcription-to-subtitle",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,17 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s2texperiments/aws-transcription-to-subtitle.git"
+  },
+  "author": "Stefan Breitenstein",
   "license": "ISC",
+  "keywords": [
+    "aws",
+    "transcribe",
+    "vtt"
+  ],
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",

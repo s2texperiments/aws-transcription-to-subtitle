@@ -44,8 +44,6 @@ exports.handler = async (event, {characterPerLine = 40, maxLines = 2, maxTimeInM
         createMaxTimeRule(maxTimeInMs)
     ];
 
-    //todo end_time does not always exists
-    //todo consider punctuation
     return 'WEBVTT\n\n' + awsTranscription.results.items
         .map((e) => ({
             content: e.alternatives[0].content,
