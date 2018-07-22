@@ -32,7 +32,6 @@ exports.handler = async (event, {characterPerLine = 40, maxLines = 2, maxTimeInM
 
     console.log(`REQUEST: ${JSON.stringify(event)}`);
     console.log(`CharacterPerLine: ${characterPerLine}`);
-    let awsTranscription = JSON.parse(event.payload);
 
     let wordsToLineMergeRules = [
         createMaxCharacterPerLineRule(characterPerLine),
@@ -44,7 +43,7 @@ exports.handler = async (event, {characterPerLine = 40, maxLines = 2, maxTimeInM
         createMaxTimeRule(maxTimeInMs)
     ];
 
-    return 'WEBVTT\n\n' + awsTranscription.results.items
+    return 'WEBVTT\n\n' + event.results.items
         .map((e) => ({
             content: e.alternatives[0].content,
             from: Math.floor(parseFloat(e.start_time) * 1000),

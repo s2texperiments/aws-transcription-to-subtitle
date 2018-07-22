@@ -16,14 +16,14 @@ describe('transcription to vtt', () => {
     });
 
     it('number_as_word_without_gap_with_0.15_per_word_data.json', async () => {
-        let result = await underTest.handler(getPayload('number_as_word_without_gap_with_0.15_per_word_data.json'));
+        let result = await underTest.handler(getEvent('number_as_word_without_gap_with_0.15_per_word_data.json'));
         console.log("#####");
         console.log(result);
         // expect(result).to.deep.equal(getExpected("number_as_word_without_gap_with_0.15_per_word_expected_one_line.json"));
     });
 
     it('se-radio.json', async () => {
-        let result = await underTest.handler(getPayload('se-radio.json'));
+        let result = await underTest.handler(getEvent('se-radio.json'));
         console.log("#####");
         console.log(result);
         writeResult(result,'se-radio.vtt');
@@ -31,7 +31,7 @@ describe('transcription to vtt', () => {
     });
 
     it('expert.json', async () => {
-        let result = await underTest.handler(getPayload('expert.json'));
+        let result = await underTest.handler(getEvent('expert.json'));
         console.log("#####");
         console.log(result);
 
@@ -43,10 +43,8 @@ describe('transcription to vtt', () => {
         return JSON.parse(fs.readFileSync(`test/data/${file}`, 'utf8'))
     }
 
-    function getPayload(file) {
-        return {
-            payload: fs.readFileSync(`test/data/${file}`, 'utf8')
-        };
+    function getEvent(file) {
+        return JSON.parse(fs.readFileSync(`test/data/${file}`, 'utf8'))
     }
 
     function writeResult(result,file) {
