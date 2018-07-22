@@ -1,0 +1,555 @@
+{
+  "transcripts": {},
+  "items": [
+    {
+      "start_time": "0.410",
+      "end_time": "0.590",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "This"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "0.590",
+      "end_time": "0.700",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "is"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "0.700",
+      "end_time": "1.130",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "software"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "1.130",
+      "end_time": "1.590",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "engineering"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "1.590",
+      "end_time": "2.120",
+      "alternatives": [
+        {
+          "confidence": "0.9932",
+          "content": "radio"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "2.130",
+      "end_time": "2.240",
+      "alternatives": [
+        {
+          "confidence": "0.7409",
+          "content": "the"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "2.250",
+      "end_time": "2.800",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "podcast"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "2.800",
+      "end_time": "2.910",
+      "alternatives": [
+        {
+          "confidence": "0.9971",
+          "content": "for"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "2.910",
+      "end_time": "3.470",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "professional"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "3.470",
+      "end_time": "4.130",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "developers"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "4.140",
+      "end_time": "4.280",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "on"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "4.280",
+      "end_time": "4.360",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "the"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "4.360",
+      "end_time": "4.660",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "web"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "4.660",
+      "end_time": "4.780",
+      "alternatives": [
+        {
+          "confidence": "0.9377",
+          "content": "at"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "4.790",
+      "end_time": "4.980",
+      "alternatives": [
+        {
+          "confidence": "0.7473",
+          "content": "s"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "4.980",
+      "end_time": "5.180",
+      "alternatives": [
+        {
+          "confidence": "0.7348",
+          "content": "c"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "5.180",
+      "end_time": "5.510",
+      "alternatives": [
+        {
+          "confidence": "0.9892",
+          "content": "dash"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "5.510",
+      "end_time": "5.910",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "radio"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "5.910",
+      "end_time": "6.190",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "dot"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "6.190",
+      "end_time": "6.430",
+      "alternatives": [
+        {
+          "confidence": "0.9989",
+          "content": "net"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "7.460",
+      "end_time": "7.550",
+      "alternatives": [
+        {
+          "confidence": "0.7862",
+          "content": "the"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "7.550",
+      "end_time": "7.940",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "radio"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "7.940",
+      "end_time": "8.060",
+      "alternatives": [
+        {
+          "confidence": "0.9420",
+          "content": "is"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "8.060",
+      "end_time": "8.320",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "brought"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "8.320",
+      "end_time": "8.400",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "to"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "8.400",
+      "end_time": "8.470",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "you"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "8.470",
+      "end_time": "8.600",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "by"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "8.600",
+      "end_time": "8.750",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "the"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "8.750",
+      "end_time": "9.150",
+      "alternatives": [
+        {
+          "confidence": "0.9809",
+          "content": "ieee"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "9.150",
+      "end_time": "9.640",
+      "alternatives": [
+        {
+          "confidence": "0.8566",
+          "content": "computers"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "9.640",
+      "end_time": "10.060",
+      "alternatives": [
+        {
+          "confidence": "0.9846",
+          "content": "aside"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "10.260",
+      "end_time": "10.520",
+      "alternatives": [
+        {
+          "confidence": "0.6308",
+          "content": "i"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "10.530",
+      "end_time": "10.910",
+      "alternatives": [
+        {
+          "confidence": "0.9710",
+          "content": "tripoli"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "10.910",
+      "end_time": "11.340",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "software"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "11.340",
+      "end_time": "11.990",
+      "alternatives": [
+        {
+          "confidence": "0.9967",
+          "content": "magazine"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "12.370",
+      "end_time": "12.980",
+      "alternatives": [
+        {
+          "confidence": "0.9982",
+          "content": "online"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "12.980",
+      "end_time": "13.070",
+      "alternatives": [
+        {
+          "confidence": "0.6266",
+          "content": "a"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "13.080",
+      "end_time": "13.470",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "computer"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "13.470",
+      "end_time": "13.700",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "dot"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "13.700",
+      "end_time": "14.120",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "org's"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "14.130",
+      "end_time": "14.490",
+      "alternatives": [
+        {
+          "confidence": "0.8510",
+          "content": "slash"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "14.490",
+      "end_time": "14.990",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "software"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "18.800",
+      "end_time": "19.220",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "hello"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "19.220",
+      "end_time": "19.850",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "everyone"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "19.860",
+      "end_time": "20.040",
+      "alternatives": [
+        {
+          "confidence": "0.9999",
+          "content": "this"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "20.040",
+      "end_time": "20.160",
+      "alternatives": [
+        {
+          "confidence": "0.9999",
+          "content": "is"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "20.160",
+      "end_time": "20.570",
+      "alternatives": [
+        {
+          "confidence": "0.6317",
+          "content": "polina"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "20.570",
+      "end_time": "20.740",
+      "alternatives": [
+        {
+          "confidence": "1.0000",
+          "content": "for"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "20.750",
+      "end_time": "20.970",
+      "alternatives": [
+        {
+          "confidence": "0.5218",
+          "content": "s"
+        }
+      ],
+      "type": "pronunciation"
+    },
+    {
+      "start_time": "20.970",
+      "end_time": "21.040",
+      "alternatives": [
+        {
+          "confidence": "0.3205",
+          "content": "e"
+        }
+      ],
+      "type": "pronunciation"
+    }
+  ]
+}

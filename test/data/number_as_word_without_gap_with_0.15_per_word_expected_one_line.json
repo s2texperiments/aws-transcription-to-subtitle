@@ -1,0 +1,74 @@
+[
+  {
+    "content": "one two three four five six seven eight",
+    "from": "0",
+    "to": "1.2",
+    "characterCount": 39
+  },
+  {
+    "content": "nine ten eleven twelve thirteen fourteen",
+    "from": "1.2",
+    "to": "2.1",
+    "characterCount": 40
+  },
+  {
+    "content": "fifteen sixteen seventeen eighteen",
+    "from": "2.1",
+    "to": "2.6999999999999997",
+    "characterCount": 34
+  },
+  {
+    "content": "nineteen twenty twentyone twentytwo",
+    "from": "2.6999999999999997",
+    "to": "3.3",
+    "characterCount": 35
+  },
+  {
+    "content": "twentythree twentyfour twentyfive",
+    "from": "3.3",
+    "to": "3.75",
+    "characterCount": 33
+  },
+  {
+    "content": "twentysix twentyseven twentyeight",
+    "from": "3.75",
+    "to": "4.2",
+    "characterCount": 33
+  },
+  {
+    "content": "twentynine thirty thirtyone thirtytwo",
+    "from": "4.2",
+    "to": "4.8",
+    "characterCount": 37
+  },
+  {
+    "content": "thirtythree thirtyfour thirtyfive",
+    "from": "4.8",
+    "to": "5.25",
+    "characterCount": 33
+  },
+  {
+    "content": "thirtysix thirtyseven thirtyeight",
+    "from": "5.25",
+    "to": "5.7",
+    "characterCount": 33
+  },
+  {
+    "content": "thirtynine forty fortyone fortytwo",
+    "from": "5.7",
+    "to": "6.3",
+    "characterCount": 34
+  },
+  {
+    "content": "fortythree fortyfour fortyfive fortysix",
+    "from": "6.3",
+    "to": "6.8999999999999995",
+    "characterCount": 39
+  },
+  {
+    "content": "fortyseven fortyeight fortynine fifty",
+    "from": "6.8999999999999995",
+    "to": "7.5",
+    "characterCount": 37
+  }
+]

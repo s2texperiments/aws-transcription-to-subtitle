@@ -1,0 +1,4212 @@
+WEBVTT
+
+1 
+00:00:00.410 --> 00:00:04.000
+This is software engineering radio the
+podcast for professional developers on
+
+2 
+00:00:04.280 --> 00:00:09.000
+the web at s c dash radio dot net the
+radio is brought to you by the ieee
+
+3 
+00:00:09.150 --> 00:00:14.000
+computers aside i tripoli software
+magazine online a computer dot org's
+
+4 
+00:00:14.130 --> 00:00:22.000
+slash software hello everyone this is
+polina for s e radio might guess today
+
+5 
+00:00:22.430 --> 00:00:26.000
+with me is andrea aesthetic and various
+stuff iq isn't social professor in
+
+6 
+00:00:26.260 --> 00:00:30.000
+computer shines at the university of
+nevada las vegas andreas has been
+
+7 
+00:00:30.190 --> 00:00:33.000
+working on creating technologies that
+make it easier for people including
+
+8 
+00:00:33.790 --> 00:00:37.000
+those with disabilities to write
+computer software he helped establish
+
+9 
+00:00:37.840 --> 00:00:41.000
+the first national educational
+infrastructure for blind or visually
+
+10 
+00:00:41.160 --> 00:00:44.000
+impaired students to learn computer
+shines and he's also the inventor of
+
+11 
+00:00:44.880 --> 00:00:49.000
+corum the first evidence oriented
+programming language and do thus than
+
+12 
+00:00:49.420 --> 00:00:53.000
+sixteen andres received the white house
+champions of change or in computer
+
+13 
+00:00:53.200 --> 00:00:57.000
+shines education welcome to the show
+under yes thanks and thanks for inviting
+
+14 
+00:00:57.000 --> 00:01:02.000
+me so this show is about how blind and
+visually impaired people interact with
+
+15 
+00:01:02.850 --> 00:01:07.000
+sulfur but first let's start with the
+basics how many blind or visually
+
+16 
+00:01:07.410 --> 00:01:11.000
+impaired people are there in the world
+what should we take into account when
+
+17 
+00:01:11.050 --> 00:01:16.000
+designing so far for them it's about one
+point three million people ball park and
+
+18 
+00:01:16.340 --> 00:01:21.000
+one in the us and that's a lot of people
+it's enough to at least make a dent on
+
+19 
+00:01:21.430 --> 00:01:26.000
+any kind of mark to market you could
+sell for so help us understand how blind
+
+20 
+00:01:26.790 --> 00:01:30.000
+people using computer because most
+people that listen to the show probably
+
+21 
+00:01:30.720 --> 00:01:35.000
+are sighted outside it is how we call
+people like that khun c and they're used
+
+22 
+00:01:35.850 --> 00:01:40.000
+to using the mouse looking at the screen
+what do blind and visually officially
+
+23 
+00:01:40.560 --> 00:01:45.000
+empower people do there's a variety of
+things that they do many people that are
+
+24 
+00:01:45.300 --> 00:01:48.000
+blind or visually impaired have partial
+vision or sometimes called functional
+
+25 
+00:01:48.490 --> 00:01:52.000
+vision depending on what it is and
+usually that means they can see some
+
+26 
+00:01:52.370 --> 00:01:55.000
+things or they can see color or they can
+see some amount of light depending upon
+
+27 
+00:01:55.960 --> 00:02:01.000
+the person. So in those cases you might
+use technologies like screen magnifier
+
+28 
+00:02:01.120 --> 00:02:05.000
+zor you might use literally a magnifying
+glass for other types of things if you
+
+29 
+00:02:05.970 --> 00:02:10.000
+are non sighted meaning you have no
+sight at all or you have no vision
+
+30 
+00:02:10.080 --> 00:02:15.000
+that's effectively functional than a
+more typical devices either braille or a
+
+31 
+00:02:15.490 --> 00:02:19.000
+screen reader probably the most common
+is screen reader technologies and
+
+32 
+00:02:19.910 --> 00:02:23.000
+basically what it means is that the
+computer translates what's on the screen
+
+33 
+00:02:23.660 --> 00:02:28.000
+into speech can you give us a nim
+precious in for how that would look like
+
+34 
+00:02:28.070 --> 00:02:35.000
+so if if a screen reader listens to or
+looks at the web page how does that some
+
+35 
+00:02:35.480 --> 00:02:42.000
+slash luke yeah, i'll turn it on a v h
+agencies receiving federal qualifies
+
+36 
+00:02:42.320 --> 00:02:46.000
+fiscal year two thousand sixteen lead
+content you are currently on web content
+
+37 
+00:02:46.380 --> 00:02:50.000
+to enter the wet area press control
+option shift down arrow that particular
+
+38 
+00:02:50.610 --> 00:02:54.000
+screenwriters called voiceover it's the
+screening option happens to be on mac on
+
+39 
+00:02:54.530 --> 00:02:57.000
+windows there's a bunch of them there's
+one called nvidia, which is free there's
+
+40 
+00:02:57.920 --> 00:03:01.000
+one that's made by a company called
+freedom scientific called jaws pretty
+
+41 
+00:03:01.120 --> 00:03:04.000
+popular but quite quite expensive and
+windows has one built in a cz well
+
+42 
+00:03:04.940 --> 00:03:09.000
+that's been improving over the last few
+years, so when we listen to it it's not
+
+43 
+00:03:09.390 --> 00:03:14.000
+only reading the text on the web site it
+can also navigate the website and give
+
+44 
+00:03:14.010 --> 00:03:18.000
+us information on where you are it said
+something like you are now x yeah that's
+
+45 
+00:03:18.300 --> 00:03:22.000
+good so there's a funny thing so
+academics often talk about this with a
+
+46 
+00:03:22.020 --> 00:03:26.000
+certain term they call it the wear at my
+problem i think the person that defined
+
+47 
+00:03:26.370 --> 00:03:30.000
+that was ah a woman by the name of
+excuse me, joan friend francioni or
+
+48 
+00:03:30.760 --> 00:03:34.000
+frankie and i'm not sure i've never met
+her actually, but in any case, the idea
+
+49 
+00:03:34.270 --> 00:03:38.000
+is pretty simple it's that the screen
+reader ties to give you both a sense of
+
+50 
+00:03:38.430 --> 00:03:43.000
+the content and a sense of like where
+you are on the page like the semantics
+
+51 
+00:03:43.990 --> 00:03:49.000
+of web page like i'm in a heading or i'm
+in a paragraph or i'm on a level two
+
+52 
+00:03:49.010 --> 00:03:55.000
+heading stuff like that yeah, because
+not only consuming the text is a problem
+
+53 
+00:03:55.080 --> 00:04:00.000
+navigating is also a big problem i've
+understood right? Yeah yes, the
+
+54 
+00:04:00.900 --> 00:04:04.000
+navigation parts of it are probably the
+most crucial because think about it like
+
+55 
+00:04:04.152 --> 00:04:08.000
+this if i gave you a long website and i
+just read the text linearly it would be
+
+56 
+00:04:08.982 --> 00:04:13.000
+pretty hard to understand because won't
+be very long and if you can navigate a
+
+57 
+00:04:13.482 --> 00:04:16.000
+web page, then you khun selectively
+determine what information toe
+
+58 
+00:04:16.851 --> 00:04:20.000
+understand when and that makes it a lot
+easier. So so far we thought about
+
+59 
+00:04:20.982 --> 00:04:26.000
+websites and navigation but of course
+there's also acts and programs do they
+
+60 
+00:04:26.012 --> 00:04:30.000
+also work with build in screen reader?
+Are you ap and program developers have
+
+61 
+00:04:30.762 --> 00:04:35.000
+to do something special? It's
+complicated unfortunately so on the webs
+
+62 
+00:04:35.322 --> 00:04:40.000
+on the web there's a number of rather
+excellent standards for accessibility in
+
+63 
+00:04:40.712 --> 00:04:46.000
+part just because the webs used a lot s
+o to give your listeners on example one
+
+64 
+00:04:46.162 --> 00:04:50.000
+is called aria aria is basically a way
+that you could do interactive web sites
+
+65 
+00:04:50.442 --> 00:04:53.000
+is sort of the type of thing if you
+wanted like an interactive facebook or
+
+66 
+00:04:53.382 --> 00:04:58.000
+something to be blind, accessible apse
+khun definitely be accessible as well,
+
+67 
+00:04:58.592 --> 00:05:02.000
+but how they're accessible varies by
+platform and is actually one of the sort
+
+68 
+00:05:02.662 --> 00:05:08.000
+of pain points. For example, if i want
+to make my app from apple accessible
+
+69 
+00:05:08.512 --> 00:05:12.000
+there's certain happily type things that
+i have to do and they're kind of tricky
+
+70 
+00:05:13.212 --> 00:05:17.000
+and android has its own platform with
+its own languages and ecosystem on top
+
+71 
+00:05:17.822 --> 00:05:22.000
+of that, if you're using apse on
+something like a tablet or phone they
+
+72 
+00:05:22.532 --> 00:05:25.000
+have different screen reader
+technologies so apple has voice over
+
+73 
+00:05:25.982 --> 00:05:29.000
+which i think most people credit a
+scholar named sean kane for inventing
+
+74 
+00:05:29.882 --> 00:05:34.000
+sort of like really cool gestures that
+you use specifically for blind
+
+75 
+00:05:34.042 --> 00:05:38.000
+individuals on dh android sort of has
+those too but they kind of have weird
+
+76 
+00:05:38.542 --> 00:05:42.000
+variations and are complicated can we
+talk for a living more about voiceover
+
+77 
+00:05:42.792 --> 00:05:47.000
+on the iphone because i've seen in an
+action but i think our audience might be
+
+78 
+00:05:47.162 --> 00:05:51.000
+a little bit confused how does that work
+with because the on ly interface is the
+
+79 
+00:05:51.622 --> 00:05:56.000
+scream any aikens how does that work and
+how does it work with special gestures?
+
+80 
+00:05:56.442 --> 00:06:03.000
+Okay, so how to describe it in words so
+think about it like this like if i want
+
+81 
+00:06:03.962 --> 00:06:08.000
+to if i'ma sided user and i'm scrolling
+wrong along i might move my finger up
+
+82 
+00:06:08.812 --> 00:06:13.000
+and down and that would let me see the
+content but if i'm blind oftentimes what
+
+83 
+00:06:13.642 --> 00:06:18.000
+i do is i might tap or tap on parts of
+the screen or double tap to interact
+
+84 
+00:06:18.562 --> 00:06:24.000
+with it and when i do that if i hit a
+target it'll talk so the idea is that i
+
+85 
+00:06:24.192 --> 00:06:29.000
+can use gestures to sort of interact
+semantically with the tablet as opposed
+
+86 
+00:06:29.252 --> 00:06:33.000
+to just scrolling with a finger and
+reading it so it would read for example,
+
+87 
+00:06:33.102 --> 00:06:37.000
+the name of the aps and then if i hear
+the ad buy wants, i would step and then
+
+88 
+00:06:37.402 --> 00:06:41.000
+it would open that yeah, stuff like that
+so like my friend, what a friend of mine
+
+89 
+00:06:41.642 --> 00:06:45.000
+that does uber all the time on his
+iphone taps it in a certain way and i
+
+90 
+00:06:45.802 --> 00:06:49.000
+will give him a sense of where it is on
+the map and things like that you could
+
+91 
+00:06:49.102 --> 00:06:54.000
+actually use a lot of absent so long as
+the developer codes it in so let's talk
+
+92 
+00:06:54.092 --> 00:06:59.000
+about that as long as the developer
+codes it in a little bit. So how well
+
+93 
+00:06:59.302 --> 00:07:05.000
+are we doing at this point? Are most aps
+operating systems and websites
+
+94 
+00:07:05.082 --> 00:07:10.000
+accessible? Our day notes are gay medium
+assessable how how well we're doing, i
+
+95 
+00:07:10.502 --> 00:07:13.000
+don't think i could give you a number in
+terms of a percentage, but a feeling for
+
+96 
+00:07:13.992 --> 00:07:19.000
+me. Yeah, i would say that there are
+some companies that do a really great
+
+97 
+00:07:19.882 --> 00:07:24.000
+job and that those air often somewhat
+bigger ones but that we have a really
+
+98 
+00:07:24.762 --> 00:07:28.000
+long way to go and that's not a
+christmas criticism is just on
+
+99 
+00:07:28.372 --> 00:07:32.000
+observation i mean, oftentimes
+developers don't actually get any
+
+100 
+00:07:32.102 --> 00:07:35.000
+training on building these in school and
+it's not reveal so it's not like it's
+
+101 
+00:07:35.872 --> 00:07:39.000
+not like we have a long way to go
+because the technology's air all bad for
+
+102 
+00:07:39.692 --> 00:07:43.000
+some reason it's just usually don't even
+teach this in school all you know,
+
+103 
+00:07:43.362 --> 00:07:47.000
+developer doesn't learn about thie s
+accessible libraries on mac, which are
+
+104 
+00:07:47.012 --> 00:07:52.000
+the common thing, or if you're on
+desktop platforms, microsoft has its own
+
+105 
+00:07:52.272 --> 00:07:55.000
+libraries, and apple has its own
+libraries, and lennox has its own
+
+106 
+00:07:55.442 --> 00:07:58.000
+libraries, and all of them were
+different, and none of them are
+
+107 
+00:07:58.172 --> 00:08:03.000
+compatible. So personally, i think that
+it would be a lot easier for developers
+
+108 
+00:08:03.712 --> 00:08:06.000
+to develop accessible technology if
+there was, like, a unifying standard
+
+109 
+00:08:06.752 --> 00:08:11.000
+across platforms, but that doesn't
+really exist at this stage of the game,
+
+110 
+00:08:11.300 --> 00:08:15.000
+at least, yeah, that was one of my goals
+in inviting you for an episode is to
+
+111 
+00:08:15.440 --> 00:08:19.000
+make developers more aware and to help
+them what they can do to make their so
+
+112 
+00:08:19.130 --> 00:08:24.000
+far more accessible, which was also my
+next question. So what can we do as the
+
+113 
+00:08:24.620 --> 00:08:29.000
+vespers? What are two things we need to
+think about when wanting to make our
+
+114 
+00:08:29.810 --> 00:08:35.000
+acts more accessible? Okay, so the first
+thing to do if you design a website is
+
+115 
+00:08:35.580 --> 00:08:40.000
+that there's a special set of guidelines
+from the w three c, and they are
+
+116 
+00:08:40.460 --> 00:08:45.000
+specifically for accessibility don't
+make sure we're linked to those and
+
+117 
+00:08:45.770 --> 00:08:50.000
+showed no so people can check them out.
+Yeah, and those are affected easily the
+
+118 
+00:08:50.290 --> 00:08:54.000
+most comprehensive source about how to
+make a website accessible, and they're
+
+119 
+00:08:54.070 --> 00:08:57.000
+great. They just tell you like, if you
+have a link, how you make that
+
+120 
+00:08:57.880 --> 00:09:01.000
+accessible, what kind of if you have a
+picture and obviously you can't see it,
+
+121 
+00:09:01.620 --> 00:09:05.000
+you put in some kind of all text, right?
+And there's there's all sorts of small
+
+122 
+00:09:05.660 --> 00:09:09.000
+things that you can do there's also some
+online accessibility checkers that you
+
+123 
+00:09:09.430 --> 00:09:13.000
+can use a knight and they're not perfect.
+You know, they can't tell you that your
+
+124 
+00:09:13.510 --> 00:09:17.000
+website is easy to use, but sometimes
+they can at least give you, like, a
+
+125 
+00:09:17.960 --> 00:09:20.000
+check and balance for some of the easy
+thing like, hey, you forgot your all
+
+126 
+00:09:20.960 --> 00:09:24.000
+text for that image. You should go fix
+that stuff like that. You know what?
+
+127 
+00:09:24.050 --> 00:09:27.000
+What are some of the issues? So all
+taxes, i think something people are
+
+128 
+00:09:27.440 --> 00:09:31.000
+familiar with, even if they don't know
+what use it you mentioned links what are
+
+129 
+00:09:31.740 --> 00:09:37.000
+best practices for links that are easy
+to fix? Okay, so with links, one thing
+
+130 
+00:09:37.280 --> 00:09:41.000
+that is generally good is to not give
+your link a moniker that doesn't have
+
+131 
+00:09:41.760 --> 00:09:47.000
+semantic meaning. So, for example, to do
+this, go hear the word here should not
+
+132 
+00:09:47.940 --> 00:09:51.000
+kill link, because then when you get it
+through the screen and it is going to
+
+133 
+00:09:51.760 --> 00:09:56.000
+stop, it is going to say link here. And
+you're going to say wares here, so we'll
+
+134 
+00:09:56.560 --> 00:10:02.000
+be better is to say, go to the website
+for the block and have that whole part b
+
+135 
+00:10:02.310 --> 00:10:04.000
+a link, it sounds like a minor thing,
+but the screen reader could make a
+
+136 
+00:10:04.840 --> 00:10:08.000
+difference. You have to listen to it.
+Yeah, that that is relatively easy to
+
+137 
+00:10:08.080 --> 00:10:12.000
+fix because super so let me understand
+how exactly that we're to screen reader,
+
+138 
+00:10:12.898 --> 00:10:16.000
+if you're navigating, there would be an
+option to go through all the links, and
+
+139 
+00:10:16.648 --> 00:10:21.000
+if there were all labeled here, it will
+be here, here, whereas if you would say
+
+140 
+00:10:21.058 --> 00:10:26.000
+the website of andrea's org website off
+university of nevada as a link, you
+
+141 
+00:10:26.588 --> 00:10:29.000
+could more usually navigate yeah, that's
+the kind of idea, like any time that you
+
+142 
+00:10:29.658 --> 00:10:33.000
+have a structure, give it a semantic
+meaning that's exactly right? Yeah, and
+
+143 
+00:10:33.248 --> 00:10:37.000
+the other things that are relatively
+easy to fix, that we should think, yeah,
+
+144 
+00:10:37.018 --> 00:10:39.000
+eso another one that is kind of an
+obvious one. I'll tell you, when this
+
+145 
+00:10:39.948 --> 00:10:45.000
+sort of adorable my daughter is, like
+five, and her school does a great job,
+
+146 
+00:10:45.268 --> 00:10:49.000
+but they have a couple accessibility
+falls on their website that are just
+
+147 
+00:10:49.048 --> 00:10:52.000
+make maybe laugh a little bit like they
+didn't do it intentionally it's ok, and
+
+148 
+00:10:52.658 --> 00:10:55.000
+so one thing that they did that that
+just i thought was funny is they wanted
+
+149 
+00:10:55.748 --> 00:10:59.000
+to put a schedule online so what they
+did is they took a picture of the
+
+150 
+00:10:59.638 --> 00:11:03.000
+schedule like a complicated spreadsheets
+and then they put that onto the website
+
+151 
+00:11:04.358 --> 00:11:07.000
+and then it shrunk so if you're visually
+impaired you can't actually read it
+
+152 
+00:11:07.728 --> 00:11:11.000
+because the text is to blot it out and
+if you have a screen reader you're going
+
+153 
+00:11:11.298 --> 00:11:14.000
+to get to that thing and it's going to
+say image so you can't actually do
+
+154 
+00:11:14.938 --> 00:11:19.000
+anything so one thing to do is don't
+like replace content with already
+
+155 
+00:11:19.848 --> 00:11:23.000
+accessible things you know if you need
+to have a table, put a table in there
+
+156 
+00:11:23.208 --> 00:11:28.000
+and then give it the market that it
+needs from the w three c so images to be
+
+157 
+00:11:28.098 --> 00:11:32.000
+for making your upside nice here but
+they shouldn't be replacing consents
+
+158 
+00:11:32.478 --> 00:11:37.000
+exactly also have bean represented
+sexually that's correct that is actual
+
+159 
+00:11:37.018 --> 00:11:43.000
+invites so what about a user interface
+if we're no no longer talking about a
+
+160 
+00:11:43.008 --> 00:11:48.000
+website but something that has buttons
+and drop down menus scroll bars why we
+
+161 
+00:11:48.118 --> 00:11:51.000
+do in those so that's a little bit
+trickier because it depends on the
+
+162 
+00:11:51.108 --> 00:11:56.000
+platform and it also depends on the a p
+i that you're using so for example, if
+
+163 
+00:11:56.808 --> 00:12:00.000
+you're using java unfortunately, while
+java technically has an accessibility
+
+164 
+00:12:00.958 --> 00:12:04.000
+architecture er a lot of it doesn't
+really work that well or in some cases
+
+165 
+00:12:04.988 --> 00:12:10.000
+really at all so this is unfortunate not
+because you know it just is but because
+
+166 
+00:12:10.362 --> 00:12:13.000
+if you're a developer you might be
+thinking all right i'm going code to the
+
+167 
+00:12:13.682 --> 00:12:16.000
+accessibility interface is gonna be
+awesome gonna make this totally
+
+168 
+00:12:16.642 --> 00:12:20.000
+accessible and then you turn it on on a
+particular platform and you're like, oh,
+
+169 
+00:12:20.562 --> 00:12:24.000
+it doesn't work and you can verify that
+by turning on the screen which you're
+
+170 
+00:12:24.482 --> 00:12:28.000
+free often times and so you just flip it
+on and say oh, it doesnt make sound i'll
+
+171 
+00:12:28.072 --> 00:12:32.000
+give an example in the net beans
+development environment second two of
+
+172 
+00:12:32.362 --> 00:12:37.000
+programmers the text editor didn't work
+for years so it's like the fundamental
+
+173 
+00:12:37.292 --> 00:12:40.000
+thing like about how to use a
+development environment like writing
+
+174 
+00:12:40.972 --> 00:12:45.000
+text but it was not accessible what was
+wrong with job is accessibility system
+
+175 
+00:12:45.782 --> 00:12:51.000
+doesn't work wow and it's you know it is
+what it is and there are other there are
+
+176 
+00:12:51.652 --> 00:12:55.000
+other types of environments that are
+much more accessible so for example
+
+177 
+00:12:56.002 --> 00:13:00.000
+microsoft for whatever reason gets flak
+a lot but for accessibility they've got
+
+178 
+00:13:00.072 --> 00:13:05.000
+a pretty dang good job right they ap
+eyes worked pretty well they're not
+
+179 
+00:13:05.712 --> 00:13:09.000
+perfect but there well thought through
+over many years and they're compatible
+
+180 
+00:13:09.472 --> 00:13:14.000
+with a lot of systems is not a plug for
+microsoft i've no vested interest but
+
+181 
+00:13:14.862 --> 00:13:18.000
+they have this thing called i accessible
+to and basically if you kowtow
+
+182 
+00:13:18.362 --> 00:13:22.000
+accessible to then your stuff is almost
+certain to be accessible but if you're
+
+183 
+00:13:22.312 --> 00:13:25.000
+working at sort of a higher level then
+sort of the little level old calm type
+
+184 
+00:13:25.912 --> 00:13:30.000
+stuff and you're just using sheet c
+sharp they've done a pretty damn good
+
+185 
+00:13:30.172 --> 00:13:34.000
+job of like building it in so that
+buttons and text boxes and stuff like
+
+186 
+00:13:34.382 --> 00:13:39.000
+that are mostly accessible night so if
+you stick with development tools from
+
+187 
+00:13:39.642 --> 00:13:43.000
+big platforms usually there are okay,
+well, it depends on the platform job is
+
+188 
+00:13:43.802 --> 00:13:47.000
+pretty big too, but it's debatable
+whether it's accessible depending on
+
+189 
+00:13:47.772 --> 00:13:52.000
+platform where c sharp is at least
+pretty dang accessible on windows and
+
+190 
+00:13:52.822 --> 00:13:56.000
+there's a mac, they do have something
+called an s accessible and that does
+
+191 
+00:13:56.712 --> 00:14:00.000
+work pretty well if you're on ly writing
+in the mac go system, the tricky thing
+
+192 
+00:14:00.752 --> 00:14:03.000
+is, whenever you're using other
+programming languages in those
+
+193 
+00:14:03.132 --> 00:14:08.000
+ecosystems like, for example, is small
+talk accessible is python accessible
+
+194 
+00:14:08.292 --> 00:14:12.000
+it's kind of you have to take it on a
+case by case basis because of the
+
+195 
+00:14:12.669 --> 00:14:17.000
+platform yeah see of those tools but by
+from the windows is different from
+
+196 
+00:14:17.209 --> 00:14:22.000
+biting a mech candy. It depends on what
+the dabs implemented. So so there still
+
+197 
+00:14:22.639 --> 00:14:26.000
+some to some things that we need to know
+about nest developers because the
+
+198 
+00:14:26.139 --> 00:14:29.000
+platforms are going to take care of it?
+Yeah, in fact, this is one reason why
+
+199 
+00:14:29.659 --> 00:14:32.000
+i've cared about the consistency of
+programming languages in part because it
+
+200 
+00:14:32.969 --> 00:14:37.000
+impacts some groups pretty poorly, like
+the blind, you know, like i'll give an
+
+201 
+00:14:37.509 --> 00:14:40.000
+example are tools for the blind, i think
+your written in like, eight programming
+
+202 
+00:14:40.999 --> 00:14:44.000
+languages and we don't want them to be,
+but we have to connect to these
+
+203 
+00:14:44.489 --> 00:14:47.000
+different systems. There's really no
+choice, something like that sixty eight
+
+204 
+00:14:47.809 --> 00:14:54.000
+i forget a lot a lot here is not of the
+books. So what about other things that
+
+205 
+00:14:54.349 --> 00:14:57.000
+we should take care of? So one of things
+that has surprised me a lot in working
+
+206 
+00:14:57.919 --> 00:15:02.000
+with, like children only a little bit is
+that some stuff like working with the
+
+207 
+00:15:02.629 --> 00:15:07.000
+mouse takes lots of energy if you're
+visually impaired but not entirely blind
+
+208 
+00:15:07.859 --> 00:15:11.000
+so you can see a little bit, so we
+sighted people would think, oh, you can
+
+209 
+00:15:11.439 --> 00:15:15.000
+use the mouse, but tracing where the
+mouse cursor is and using the mouse
+
+210 
+00:15:15.509 --> 00:15:19.000
+takes lots of energy that was this thing
+that surprised me loans are there are a
+
+211 
+00:15:19.459 --> 00:15:23.000
+few other things that we like this that
+we should think about, yeah, and
+
+212 
+00:15:23.429 --> 00:15:26.000
+actually there's some stuff that greeted
+hui tool kit designers khun do that are
+
+213 
+00:15:26.979 --> 00:15:31.000
+pretty easy. So for example, if you're
+designing some kind of a text box type
+
+214 
+00:15:31.459 --> 00:15:34.000
+interface and it doesn't have any
+textbooks but something that you would
+
+215 
+00:15:34.069 --> 00:15:38.000
+follow a pointer whenever the point your
+moves, if someone is magnified, follow
+
+216 
+00:15:38.229 --> 00:15:42.000
+it right so that if you're moving a
+magnification system, they always have
+
+217 
+00:15:42.769 --> 00:15:46.000
+the context of where the most important
+thing is i'm sort of full focus should
+
+218 
+00:15:46.609 --> 00:15:51.000
+full of occurred are yes ok, yeah so
+like if you're like for example, one of
+
+219 
+00:15:51.099 --> 00:15:56.000
+my old students i shouldn't say his name
+since you know, because he happens to be
+
+220 
+00:15:56.019 --> 00:16:01.000
+blind right? And he used a magnifier
+pretty heavily and when he would use
+
+221 
+00:16:01.759 --> 00:16:05.000
+just typical gooey elements for example,
+imagine if you pressed a button and
+
+222 
+00:16:05.629 --> 00:16:09.000
+opened a menu, but it didn't jump to
+that menu and you're highly magnified
+
+223 
+00:16:09.449 --> 00:16:13.000
+it's a lot easier if the magnification
+system follows you but not all the
+
+224 
+00:16:13.209 --> 00:16:16.000
+operating systems do that. Oh, and then
+you'd have to scroll, which is super
+
+225 
+00:16:16.808 --> 00:16:21.000
+hard yes magnify yeah, so i clicked the
+menu and then have to, like, tap the
+
+226 
+00:16:21.018 --> 00:16:24.000
+mouse a bunch to sort of get it up there
+and hope that you can find it the gets
+
+227 
+00:16:24.978 --> 00:16:30.000
+tricky so focus is a big issue focuses a
+huge issue you rejection, any order,
+
+228 
+00:16:30.908 --> 00:16:35.000
+huge issues like that let's see so for
+in terms of trying to make general user
+
+229 
+00:16:35.878 --> 00:16:39.000
+interfaces accessible won that my team
+has been working on that i think it's
+
+230 
+00:16:39.538 --> 00:16:42.000
+really fun is we've been trying to
+figure out how to make graphics
+
+231 
+00:16:42.488 --> 00:16:46.000
+accessible, so here here's the tricky
+part if you've got something like like
+
+232 
+00:16:46.818 --> 00:16:50.000
+let's just say unity three d which is
+sort of like this game designed platform
+
+233 
+00:16:50.398 --> 00:16:53.000
+right? We have ah grant from the
+national science foundation right now to
+
+234 
+00:16:53.878 --> 00:16:57.000
+try to take big, complicated three d
+interfaces like that make him buy
+
+235 
+00:16:57.688 --> 00:17:01.000
+accessible but here's the rub well, you
+could make buttons and stuff like that
+
+236 
+00:17:01.298 --> 00:17:05.000
+accessible there's just no way you can
+tell open g l make yourself blind
+
+237 
+00:17:05.127 --> 00:17:09.000
+accessible there just is no tool it is
+inherent visual it is inherently visual
+
+238 
+00:17:09.518 --> 00:17:13.000
+accept any kind of three d application
+still has things you could potentially
+
+239 
+00:17:13.678 --> 00:17:18.000
+tele screen reader about so for example,
+if i'm navigating terrain or something
+
+240 
+00:17:18.338 --> 00:17:21.000
+like that are trying to adjust to rain
+or a three d model hypothetically you
+
+241 
+00:17:21.738 --> 00:17:25.000
+could provide a list of things that
+could be positions on that terrain and
+
+242 
+00:17:25.917 --> 00:17:28.000
+tell it to go up and down which would
+still give a screen reader information.
+
+243 
+00:17:29.298 --> 00:17:33.000
+So one of the things we're trying to
+invent in the lab is a way for blind
+
+244 
+00:17:33.068 --> 00:17:36.000
+children to be able to write their own
+three d computer games and be able to
+
+245 
+00:17:36.408 --> 00:17:39.000
+adjust it through their typical
+screening device without needing any
+
+246 
+00:17:39.618 --> 00:17:42.000
+special stuff while still having it the
+hardware accelerated and all that stuff
+
+247 
+00:17:43.298 --> 00:17:47.000
+it's been a hard project that's taking
+me four years to get a handle around in
+
+248 
+00:17:47.388 --> 00:17:51.000
+my brain but i think we're getting
+pretty close and are those things that
+
+249 
+00:17:51.308 --> 00:17:56.000
+also usable for let's say more practical
+things that are inherently visual i'm
+
+250 
+00:17:56.628 --> 00:18:01.000
+thinking off a diagram or a map or a
+graph see that's the thing if you could
+
+251 
+00:18:01.898 --> 00:18:05.000
+do that for the hard stuff and graphics
+any of the rest comes comes easily yeah
+
+252 
+00:18:06.848 --> 00:18:10.000
+oh yeah we talked about frameworks and
+libraries ready a little bit. So you
+
+253 
+00:18:10.528 --> 00:18:15.000
+mentioned and ass accessible that's a
+framework that we can use to make stuff
+
+254 
+00:18:16.178 --> 00:18:19.000
+more accessible? Sort of out of the
+books are there are other things we
+
+255 
+00:18:19.958 --> 00:18:24.000
+should check out frameworks of libraries.
+Yeah, the big one's, the big. The two
+
+256 
+00:18:24.108 --> 00:18:29.000
+biggest ones are anice accessible on mac
+and i accessible to on windows. But i
+
+257 
+00:18:29.408 --> 00:18:33.000
+think since in terms of the web, by far
+the two things that people should know
+
+258 
+00:18:33.578 --> 00:18:37.000
+about the w three c accessibility
+standards and also this thing called
+
+259 
+00:18:37.138 --> 00:18:42.000
+aria this mildly mildly hard to google
+sometimes you don't have to say a r i a
+
+260 
+00:18:42.638 --> 00:18:48.000
+space accessibility, but the idea is
+that the w three c standards sort of
+
+261 
+00:18:48.848 --> 00:18:52.000
+tell you any pretty much anything you
+would need to know about basic like
+
+262 
+00:18:52.418 --> 00:18:55.000
+content. And the aria standards are
+really good at trying to help you
+
+263 
+00:18:55.988 --> 00:19:00.000
+understand like interactive content,
+cool or audio up to a jag stuff things
+
+264 
+00:19:00.498 --> 00:19:03.000
+like that we'll make sure we at all of
+that to the show notes so people that
+
+265 
+00:19:03.818 --> 00:19:09.000
+want to know more comtech it out the
+sleeve so so far we've mainly talked
+
+266 
+00:19:09.128 --> 00:19:15.000
+about to everyday tools that many people
+use like a website or an actor or a
+
+267 
+00:19:15.458 --> 00:19:21.000
+phone but there's also people that
+program while blinds and we use the
+
+268 
+00:19:21.338 --> 00:19:27.000
+vespers might make tools for people that
+want a program also more accessible so i
+
+269 
+00:19:27.078 --> 00:19:33.000
+want to talk about that a little bit how
+do blind people program and what should
+
+270 
+00:19:33.008 --> 00:19:38.000
+we know by blind developers to make
+developed tools more assessable yes so
+
+271 
+00:19:38.008 --> 00:19:42.000
+actually blind developers fall into the
+same category so either visually
+
+272 
+00:19:42.558 --> 00:19:48.000
+impaired or totally blind and they do
+amazingly interesting things. So for
+
+273 
+00:19:48.458 --> 00:19:52.000
+example a number of line developers that
+design technologies for all sorts of
+
+274 
+00:19:52.168 --> 00:19:56.000
+things one of one of my good friends his
+name is signor graham he designs
+
+275 
+00:19:56.658 --> 00:20:00.000
+accessibility installations for museums
+he he won this award from the white
+
+276 
+00:20:00.098 --> 00:20:03.000
+house a bunch of years back and got
+connected with museums all over the
+
+277 
+00:20:03.118 --> 00:20:06.000
+world to build like weird, accessible
+interfaces and stuff like that if you go
+
+278 
+00:20:06.958 --> 00:20:09.000
+to your museum there's an accessible
+thing it's very likely he's been
+
+279 
+00:20:09.928 --> 00:20:13.000
+involved in some capacity or another. So
+what are we thinking about accessible
+
+280 
+00:20:13.418 --> 00:20:17.000
+museums then someone that's describing
+the painting i could be all sorts of
+
+281 
+00:20:17.833 --> 00:20:21.000
+stuff and to be honest, i'm not exactly
+sure all the details of what he does but
+
+282 
+00:20:21.683 --> 00:20:25.000
+i've seen like some stuff here and there
+it seems pretty cool but the point is as
+
+283 
+00:20:26.063 --> 00:20:29.000
+the point isn't so much the details of
+what he does it's how he does it so how
+
+284 
+00:20:29.813 --> 00:20:33.000
+does he do it? So what he does is he
+uses his screen reader and then he
+
+285 
+00:20:33.533 --> 00:20:37.000
+listens to the text now there's some
+obvious complexity there so for example,
+
+286 
+00:20:37.533 --> 00:20:42.000
+if you two sided users sometimes as
+developers we don't really think about
+
+287 
+00:20:42.163 --> 00:20:46.000
+the sort of weird wacky syntax that
+happens but is a blind developer you
+
+288 
+00:20:46.053 --> 00:20:49.000
+literally have to listen to for left
+brandon cycle zero cynical and i was
+
+289 
+00:20:49.423 --> 00:20:53.000
+intense public alumni list i suppose
+right friend left brace yourself like
+
+290 
+00:20:53.203 --> 00:20:57.000
+that so it's free reader that's normally
+used for text is then used in source
+
+291 
+00:20:57.863 --> 00:21:02.000
+code and it just reads old symbols yeah
+and it's not like you can't get used to
+
+292 
+00:21:02.753 --> 00:21:06.000
+it but the problem is it depends you
+know a lot on like where you are in the
+
+293 
+00:21:06.203 --> 00:21:09.000
+development pipeline like if you're an
+experienced super experienced
+
+294 
+00:21:09.073 --> 00:21:12.000
+professional you've already made it past
+all the barriers and you're good to go
+
+295 
+00:21:13.043 --> 00:21:16.000
+then yeah, you're going to be fine, but
+we've also spent a lot of time talking
+
+296 
+00:21:16.673 --> 00:21:20.000
+to blind children and let's just say the
+first time that a blind child hears for
+
+297 
+00:21:20.863 --> 00:21:23.000
+left handed like was there a some
+clothes i wasn't sent simon cohen on
+
+298 
+00:21:23.413 --> 00:21:27.000
+post post right prem left grace it's a
+little weird and it sort of makes you
+
+299 
+00:21:27.043 --> 00:21:34.000
+wonder why languages are built that way
+for enough so for the let's say end user
+
+300 
+00:21:34.803 --> 00:21:39.000
+tools we talked about navigation being a
+huge issue i can imagine that is for
+
+301 
+00:21:39.593 --> 00:21:45.000
+programming as well i think if i read
+golden and infirm eriks code base i
+
+302 
+00:21:45.013 --> 00:21:50.000
+would scroll open on to see what other
+classes when other methods how does the
+
+303 
+00:21:50.093 --> 00:21:54.000
+screen reader for blind people navigate
+smersh code? Because does it have
+
+304 
+00:21:54.263 --> 00:21:57.000
+hatters there's a take the contacts into
+account or you could skip from the one
+
+305 
+00:21:57.823 --> 00:22:03.000
+class to the other yes and no so it does
+but in the same way you know how when
+
+306 
+00:22:03.973 --> 00:22:06.000
+you're using a development tool
+oftentimes you might have a little like
+
+307 
+00:22:06.933 --> 00:22:10.000
+navigators off to the side and it'll
+have the list of the classes and methods
+
+308 
+00:22:10.263 --> 00:22:14.000
+you click on him oftentimes those air
+accessible so you can still jump around.
+
+309 
+00:22:14.383 --> 00:22:19.000
+However, that doesn't mean it's easy, so
+when you're done, i think one of the
+
+310 
+00:22:19.449 --> 00:22:24.000
+harder things for blind individuals is
+that you can navigate a little bit and
+
+311 
+00:22:24.309 --> 00:22:27.000
+there's a number of research teams that
+are working on making those navigators
+
+312 
+00:22:27.409 --> 00:22:31.000
+better. But the one of the trickier part
+of if you've got like a long method,
+
+313 
+00:22:31.459 --> 00:22:35.000
+getting context can be difficult. So you
+know twenty lines of really complicated
+
+314 
+00:22:35.979 --> 00:22:39.000
+code you have to kind of memorize it to
+figure out what's going on depending
+
+315 
+00:22:39.259 --> 00:22:43.000
+upon what you're doing oh so you're
+saying if you want to comprehend and
+
+316 
+00:22:43.009 --> 00:22:47.000
+methods maybe you read one line read
+another line but you need to remember
+
+317 
+00:22:47.709 --> 00:22:51.000
+all of those whereas if you recited the
+fell apart you could skip down to maybe
+
+318 
+00:22:51.379 --> 00:22:55.000
+the loop that's in the methods and like,
+oh, it loops over all the customers are
+
+319 
+00:22:55.049 --> 00:22:59.000
+whatever that's yeah exactly so like if
+i'm looking at a screen of code, i can
+
+320 
+00:22:59.399 --> 00:23:03.000
+kind of glance up and down to get very
+quick context that's a little bit harder
+
+321 
+00:23:03.649 --> 00:23:07.000
+if you're blind or i guess many of my
+blind friends would probably say that
+
+322 
+00:23:07.399 --> 00:23:12.000
+it's not this way harder but maybe
+slower yeah or different different yeah
+
+323 
+00:23:13.269 --> 00:23:19.000
+arter things we can do as developers in
+that respect, what can we do to make
+
+324 
+00:23:19.179 --> 00:23:23.000
+developer tools more accessible? For
+example, that navigation can we make
+
+325 
+00:23:23.849 --> 00:23:29.000
+resource go more easily navigate herbal
+for source code it's tough? I think that
+
+326 
+00:23:29.909 --> 00:23:34.000
+the bigger issues are number one many of
+the development ides aren't very
+
+327 
+00:23:34.389 --> 00:23:38.000
+accessible or if they are accessible
+they sort of break every other release
+
+328 
+00:23:39.059 --> 00:23:42.000
+and it's again it's not like it's
+malicious or anything it's just people
+
+329 
+00:23:42.149 --> 00:23:47.000
+don't think about it. So for example
+visual studio is sort of accessible
+
+330 
+00:23:47.299 --> 00:23:52.000
+right now, but historically it's sort of
+you know is sort of accessible sort of
+
+331 
+00:23:52.679 --> 00:23:57.000
+not depending on the release or even if
+it is accessible for certain ieds
+
+332 
+00:23:57.649 --> 00:24:02.000
+sometimes they make rather adorable
+decisions, so for example i remember
+
+333 
+00:24:02.729 --> 00:24:06.000
+boyfriend which version of visual studio
+it was but i recall there was a little
+
+334 
+00:24:06.149 --> 00:24:10.000
+too bugger label and had an arrow wanted
+and so if europe a blind person or like
+
+335 
+00:24:10.479 --> 00:24:14.000
+let's say a child instead of giving you
+information about what you're doing in
+
+336 
+00:24:14.219 --> 00:24:18.000
+the departure would say like graphic
+fifty three and it's like i get it you
+
+337 
+00:24:18.029 --> 00:24:21.000
+can learn that but it's sort of weird
+you have to write so is that what you
+
+338 
+00:24:21.766 --> 00:24:26.000
+mean with short of accessible can you
+explain a little bit more more detail
+
+339 
+00:24:26.146 --> 00:24:30.000
+what what does it mean if something is
+sword off accessible it was sort off
+
+340 
+00:24:30.826 --> 00:24:35.000
+what is it and what parts is
+inaccessible and what parts isn't it i'm
+
+341 
+00:24:35.016 --> 00:24:37.000
+trying to think how to describe this
+like have you ever been on a website and
+
+342 
+00:24:37.656 --> 00:24:44.000
+like you could use it but it's sort of
+bothered you yeah doesn't fuel logical
+
+343 
+00:24:44.516 --> 00:24:49.000
+right like the links are on weird places
+and it looks strange and stuff like that
+
+344 
+00:24:49.296 --> 00:24:55.000
+that's true for accessible interface is
+a cz well so example if you're a page
+
+345 
+00:24:55.256 --> 00:24:58.000
+wasn't structured with proper formatting
+then you wouldn't be able to navigate
+
+346 
+00:24:58.836 --> 00:25:03.000
+its you might go to like go up and down
+with bunch of giant paragraphs but you
+
+347 
+00:25:03.886 --> 00:25:08.000
+would definitely be annoyed and with
+ideas is kind of a similar situation
+
+348 
+00:25:08.256 --> 00:25:11.000
+it's sort of like you might be able to
+navigate the source code editor but
+
+349 
+00:25:11.976 --> 00:25:16.000
+maybe navigation doesn't work maybe
+certain features are broken maybe you'll
+
+350 
+00:25:16.016 --> 00:25:19.000
+get to certain windows you can't
+navigate through amore the preferences
+
+351 
+00:25:19.826 --> 00:25:23.000
+window won't be accessible with the
+other windows are maybe the file save
+
+352 
+00:25:23.396 --> 00:25:28.000
+dialogue is broken so that this is the
+thing is that a lot of these id's is not
+
+353 
+00:25:28.406 --> 00:25:31.000
+so much that they're good or bad is a
+whole ofthe times they're just weirdly
+
+354 
+00:25:31.406 --> 00:25:36.000
+inconsistent, so certain interfaces will
+be broken for a release or two makes it
+
+355 
+00:25:36.406 --> 00:25:40.000
+kind of hard, especially if you're
+lerner, but for professionals to yeah
+
+356 
+00:25:40.356 --> 00:25:45.000
+could measure inconsistency is bad for
+any demographic? Yeah, pretty much and i
+
+357 
+00:25:45.596 --> 00:25:49.000
+think it's easy for a deaf to
+accidentally screwed up because they
+
+358 
+00:25:49.466 --> 00:25:53.000
+don't do it every like there. I think a
+lot of designers they don't usually test
+
+359 
+00:25:53.586 --> 00:25:56.000
+with the screen reader, and so they
+don't really notice when something is
+
+360 
+00:25:56.626 --> 00:26:00.000
+broken for the blind. Yeah, going to
+that point, what are things we could do
+
+361 
+00:26:00.926 --> 00:26:06.000
+if we are in the field off making id's
+or mention any plug ins? One thing we
+
+362 
+00:26:06.886 --> 00:26:10.000
+could do is tested with a scream.
+Rainier do you have other concrete tips?
+
+363 
+00:26:11.076 --> 00:26:15.000
+Suppose we're in the business of
+developing iii's are related to that or
+
+364 
+00:26:15.356 --> 00:26:19.000
+for programmers, what do we need to
+check so there's a few things? Number
+
+365 
+00:26:19.506 --> 00:26:22.000
+one is if you're at a big company and
+you have the cash, you can get a
+
+366 
+00:26:22.856 --> 00:26:26.000
+consultant to help because it is tricky
+and so don't assume that like you have
+
+367 
+00:26:26.701 --> 00:26:30.000
+to figure it all out yourself there's
+lots of people out there that know how
+
+368 
+00:26:30.691 --> 00:26:35.000
+to do it and that can help with it,
+especially on the web. The web is not
+
+369 
+00:26:35.411 --> 00:26:39.000
+perfect nowadays but it's so much better
+today than it was, you know, twenty
+
+370 
+00:26:39.781 --> 00:26:46.000
+years ago whatever and so that's number
+one number two even though definitely
+
+371 
+00:26:46.741 --> 00:26:51.000
+turning on a screen reader is a good
+thing and can help figure stuff out the
+
+372 
+00:26:51.241 --> 00:26:55.000
+the one tricky thing to do is to check
+it compared to a variety of disability.
+
+373 
+00:26:55.831 --> 00:26:59.000
+So think that one thing just kind of go
+through a checklist of what those could
+
+374 
+00:26:59.301 --> 00:27:04.000
+be. So for example, if you are totally
+blind, you might use a screen reader but
+
+375 
+00:27:04.191 --> 00:27:08.000
+ifyou're visually impaired, which is a
+lie a lot more people than you might
+
+376 
+00:27:08.721 --> 00:27:12.000
+think of issues like color contrast and
+those air on light there's only checkers
+
+377 
+00:27:12.301 --> 00:27:16.000
+for that and it's really easy to do and
+even if you're not blind that's helpful
+
+378 
+00:27:16.851 --> 00:27:20.000
+there too because like the color
+contrast helps people read your page,
+
+379 
+00:27:20.591 --> 00:27:23.000
+people could be colorblind, they benefit
+they could also be colorblind, but they
+
+380 
+00:27:23.871 --> 00:27:27.000
+could also just like it makes it easier
+to read like, for example, you know if
+
+381 
+00:27:27.311 --> 00:27:30.000
+you have black text on white background
+that's really easy to read but black
+
+382 
+00:27:30.811 --> 00:27:35.000
+text on dark gray background maybe not
+so much and so a lot of the issues that
+
+383 
+00:27:35.081 --> 00:27:38.000
+you do with accessibility they tend to
+have these other little benefits like
+
+384 
+00:27:38.891 --> 00:27:44.000
+your sight is generally easier reading
+so so that our top tips get consultant's
+
+385 
+00:27:44.261 --> 00:27:50.000
+help if you can pay for it or use your
+own at or website or idee with a screen
+
+386 
+00:27:50.951 --> 00:27:54.000
+radio and we'll just see how it feels
+screen reader enabled but also don't
+
+387 
+00:27:54.571 --> 00:27:57.000
+forget that the visually impaired
+community is larger than the totally
+
+388 
+00:27:57.931 --> 00:28:03.000
+blind community so think about things
+like magnification color contrasts and
+
+389 
+00:28:03.241 --> 00:28:06.000
+stuff like that you know we haven't
+really talked about the braille
+
+390 
+00:28:06.091 --> 00:28:10.000
+interface and lords oh yeah actually it
+sounds weird but actually a lot of the
+
+391 
+00:28:10.881 --> 00:28:15.000
+blind community doesn't actually know
+braille that is present yeah it's sort
+
+392 
+00:28:15.161 --> 00:28:19.000
+of a bizarre quirks but think about it
+like this if you're blind and you go
+
+393 
+00:28:19.261 --> 00:28:22.000
+blind later in life, the question is do
+i just turn on a screen reader which i
+
+394 
+00:28:22.911 --> 00:28:27.000
+can download at no cost or die by rail
+to speed for like three to ten thousand
+
+395 
+00:28:27.111 --> 00:28:32.000
+dollars and have to learn braille right?
+So it's kind of a barrier however, if
+
+396 
+00:28:32.775 --> 00:28:36.000
+you're at if you're a young person and
+you know blind from birth or or very
+
+397 
+00:28:36.715 --> 00:28:41.000
+young oftentimes it's a good idea to
+learn braille skills because it's a nice
+
+398 
+00:28:41.345 --> 00:28:46.000
+way to read i'm so far as i understand
+it but for us as developers the bro
+
+399 
+00:28:46.195 --> 00:28:50.000
+interface is not as big of a chunk of
+the people we could reach as is
+
+400 
+00:28:50.255 --> 00:28:53.000
+optimized more scream read that's true
+and if it if your interface is
+
+401 
+00:28:53.675 --> 00:28:58.000
+accessible you most of the time get the
+railing sign for free now there is some
+
+402 
+00:28:58.285 --> 00:29:02.000
+tricky stuff like for example, braille
+standards change over time and computer
+
+403 
+00:29:02.995 --> 00:29:07.000
+symbols in braille like that using
+programming language languages don't
+
+404 
+00:29:07.445 --> 00:29:11.000
+always come out well, so there's really
+getting really i'm not exactly sure
+
+405 
+00:29:11.215 --> 00:29:15.000
+which ones i have a friend that's a
+braille expert and i'm that's not it
+
+406 
+00:29:15.075 --> 00:29:18.000
+sounds like you would know about all
+these things, but a lot of these really
+
+407 
+00:29:18.025 --> 00:29:22.000
+complicated and braille is one of those
+areas i know less about, but yet little
+
+408 
+00:29:22.615 --> 00:29:25.000
+weird symbols that we often use in
+programming languages for whatever
+
+409 
+00:29:25.435 --> 00:29:31.000
+reason, so so far we talked about tools,
+abs websites and e what thing that's
+
+410 
+00:29:31.485 --> 00:29:34.000
+really important to developers that we
+haven't covered is the comm outline?
+
+411 
+00:29:35.145 --> 00:29:38.000
+Does this create a way to work on the
+command line? What does it read? Is that
+
+412 
+00:29:39.455 --> 00:29:43.000
+better interface for people that are
+visually impaired than running it from a
+
+413 
+00:29:43.715 --> 00:29:47.000
+nineteen you for example, i say i
+wouldn't say it's better, but it's
+
+414 
+00:29:47.235 --> 00:29:51.000
+definitely most of the time they're
+accessible, so a command line interface
+
+415 
+00:29:51.755 --> 00:29:56.000
+is definitely a nice fall back, but when
+you think about it oftentimes when your
+
+416 
+00:29:56.315 --> 00:30:00.000
+programming a command line interface is
+okay, but id's offing all sorts of stuff
+
+417 
+00:30:00.715 --> 00:30:04.000
+like auto factoring and all that all
+that so sometimes it is nice to be able
+
+418 
+00:30:04.835 --> 00:30:09.000
+to use an i d which is why, you know,
+people think prefer it however a command
+
+419 
+00:30:09.325 --> 00:30:12.000
+line interface is almost always
+accessible, which is why it's not a bad
+
+420 
+00:30:12.365 --> 00:30:15.000
+option if you have to. Okay, so it's a
+good idea to have come out into freight
+
+421 
+00:30:15.825 --> 00:30:19.000
+kamala and phrase because it sort of
+assessment by default yeah, you're
+
+422 
+00:30:19.005 --> 00:30:23.000
+probably gonna have accessibility
+support if you use one, you know? So you
+
+423 
+00:30:23.015 --> 00:30:27.000
+briefly touched the bone re factoring
+support as one of the things that an i d
+
+424 
+00:30:27.365 --> 00:30:33.000
+offers us sighted people are those
+features that blind people can use
+
+425 
+00:30:33.104 --> 00:30:37.000
+because if i think of you factoring i e
+i think of many things that are visual
+
+426 
+00:30:37.834 --> 00:30:42.000
+let's say the rename refractory i think
+of selecting a variable i think of right
+
+427 
+00:30:42.694 --> 00:30:47.000
+clicking, getting a context menu,
+selecting renamed rue factoring, getting
+
+428 
+00:30:47.034 --> 00:30:52.000
+a bull pup that says what's the new name
+getting a preview of how my source code
+
+429 
+00:30:52.194 --> 00:30:56.000
+would look like in a new version is like
+visual, visual, visual visual yeah, it
+
+430 
+00:30:56.814 --> 00:31:00.000
+sounds like it wouldn't be, but they
+usually are yeah, and then we have to be
+
+431 
+00:31:00.564 --> 00:31:04.000
+but they usually are yeah, and the
+reason is because they no, most of the
+
+432 
+00:31:04.114 --> 00:31:07.000
+time, they use normal, gooey elements
+like context, menus and stuff like
+
+433 
+00:31:07.004 --> 00:31:11.000
+you're saying, and most of the time, if
+you program it correctly and, like java,
+
+434 
+00:31:11.284 --> 00:31:16.000
+isn't broken for accessibility, then yes,
+they're accessible. But i should say,
+
+435 
+00:31:16.044 --> 00:31:19.000
+i'm not trying to pick on java is just
+happens to be not accessible if that's
+
+436 
+00:31:19.574 --> 00:31:25.000
+the way it is, the weakness. I was also
+thinking about testing, which also is
+
+437 
+00:31:25.484 --> 00:31:30.000
+often inherently visual in the sense
+that failing tests would get mad, i
+
+438 
+00:31:30.344 --> 00:31:35.000
+thought, yeah, yeah, just do scream
+readers read those thoughts. I'm not
+
+439 
+00:31:35.834 --> 00:31:40.000
+sure about the specific interface for,
+like j unit or something, but generally
+
+440 
+00:31:40.884 --> 00:31:44.000
+speaking, those things can be coded to
+be accessible. And also you can just
+
+441 
+00:31:44.154 --> 00:31:47.000
+dump it to the command line and then
+it'll be accessible. Teo far enough. And
+
+442 
+00:31:47.534 --> 00:31:54.000
+what about quigley's? Okay, that's
+tricky. So there's are a few things in
+
+443 
+00:31:55.184 --> 00:32:00.000
+interfaces that are highly visual aren't
+super accessible, so little squid lee's
+
+444 
+00:32:00.574 --> 00:32:04.000
+actually are, believe it or not, or at
+least you could make them and there's a
+
+445 
+00:32:04.294 --> 00:32:08.000
+couple ways you can do it. One is what
+we do in some of our tools with wind.
+
+446 
+00:32:08.794 --> 00:32:12.000
+When you have a squiggly at the very,
+very like point, one seconds will go
+
+447 
+00:32:12.794 --> 00:32:17.000
+like something like that so that way the
+thing is is that you need it to be right
+
+448 
+00:32:17.124 --> 00:32:19.000
+at the beginning of the lancastrian
+eyebrows you'll be like going up and
+
+449 
+00:32:19.794 --> 00:32:24.000
+down between variables like this line
+this line and then you can hear right
+
+450 
+00:32:24.324 --> 00:32:27.000
+away that there's an error on the line.
+So then in that case you might you can
+
+451 
+00:32:27.774 --> 00:32:31.000
+either query for the air you can check
+your compile bach or you can wait to the
+
+452 
+00:32:31.308 --> 00:32:35.000
+end of the line and we embedded at the
+end of the line so then it would be
+
+453 
+00:32:35.178 --> 00:32:39.000
+different from how signing people would
+perceive it because for us the squiggly
+
+454 
+00:32:39.238 --> 00:32:43.000
+sometimes is not in there the entire
+line but in a in the departure of the
+
+455 
+00:32:43.868 --> 00:32:47.000
+line that is the issue. Oh, yeah,
+clarity will be slightly different
+
+456 
+00:32:47.128 --> 00:32:51.000
+because you get the error at the
+beginning of the line so it's a bit less,
+
+457 
+00:32:51.788 --> 00:32:56.000
+i think that's right information. Yeah,
+but that's ok, cool. So all these things
+
+458 
+00:32:56.518 --> 00:33:01.000
+that we perceive as visual are
+understandable for blind users. Really?
+
+459 
+00:33:01.958 --> 00:33:06.000
+Sometimes i mean, there are tricky ones.
+I was just thinking of one s o if you
+
+460 
+00:33:06.228 --> 00:33:10.000
+ever used one of those like interfaces
+for gifts that are highly visual def so
+
+461 
+00:33:10.318 --> 00:33:14.000
+yeah, you get like red is just lines and
+green is the same lines compared to the
+
+462 
+00:33:14.868 --> 00:33:17.000
+previous committed or to moscow yeah, it
+would be awesome if those were
+
+463 
+00:33:17.938 --> 00:33:22.000
+accessible but i'm not totally sure how
+to do it because they're really, really
+
+464 
+00:33:22.498 --> 00:33:26.000
+visual and they often use non standard
+components so like custom little drawing
+
+465 
+00:33:26.618 --> 00:33:30.000
+tools and things like that so i think
+it's probably possible i've just uh
+
+466 
+00:33:30.448 --> 00:33:34.000
+never trying you in theory you could
+have something similar where you have
+
+467 
+00:33:34.118 --> 00:33:38.000
+the cliques at the beginning of the line
+for what is red and green for one that's
+
+468 
+00:33:38.178 --> 00:33:41.000
+the same yeah and blind people
+definitely can and do use version
+
+469 
+00:33:41.558 --> 00:33:45.000
+control so for example i know we used to
+have a number of blind children doing
+
+470 
+00:33:45.268 --> 00:33:49.000
+lego robot competitions and so they
+would use i fire akane correctly they'd
+
+471 
+00:33:49.368 --> 00:33:52.000
+use get to send files back and forth to
+each other because the command lines
+
+472 
+00:33:53.128 --> 00:33:57.000
+accessible and we make it accessible in
+some of our little ideas to you just we
+
+473 
+00:33:57.158 --> 00:34:01.000
+just could never get like visual defying
+working thing is a hard problem in
+
+474 
+00:34:01.158 --> 00:34:04.000
+general even for people that can see it
+kind of is and even if you get it on the
+
+475 
+00:34:04.488 --> 00:34:08.000
+command line all those weird little get
+symbols yeah, those air unreadable by
+
+476 
+00:34:08.058 --> 00:34:12.000
+anybody yeah they're waiting for me in
+me too i want to talk a little bit more
+
+477 
+00:34:12.967 --> 00:34:17.000
+about the process of development so
+suppose you were a blind or visually
+
+478 
+00:34:17.297 --> 00:34:20.000
+impaired developer inside the company
+and you want to communicate architecture
+
+479 
+00:34:21.277 --> 00:34:25.000
+how would you use your mel diagram
+generally speaking, you ml is not
+
+480 
+00:34:25.558 --> 00:34:30.000
+accessible at all on dh when i say that
+what i mean is that oftentimes you emma
+
+481 
+00:34:30.848 --> 00:34:34.000
+was rendered in some way so you could do
+it if you either had a graphical render
+
+482 
+00:34:34.938 --> 00:34:40.000
+some other approach however oftentimes
+all you, um it'll really does is provide
+
+483 
+00:34:40.728 --> 00:34:44.000
+you a sense of the structure and there's
+lots of ways to navigate structure. So
+
+484 
+00:34:44.618 --> 00:34:48.000
+in other words, if you're out of design
+meeting and you put uml up on the board
+
+485 
+00:34:48.228 --> 00:34:52.000
+yeah that's not gonna help but if you
+have like a development tool where you
+
+486 
+00:34:52.128 --> 00:34:55.000
+can navigate the classes and read the
+code, then that's the way that you could
+
+487 
+00:34:55.328 --> 00:34:58.000
+be inclusive of a person that's blind
+even if the rest of the team is using
+
+488 
+00:34:58.598 --> 00:35:03.000
+uml at the same time. So as long as it's
+a textural and structural representation
+
+489 
+00:35:03.718 --> 00:35:07.000
+you can represent class iran's but the
+visual version would be very tricky
+
+490 
+00:35:07.978 --> 00:35:11.000
+pretty much now there was a really cool
+dissertation done on a few years back. I
+
+491 
+00:35:11.628 --> 00:35:17.000
+think the guy's name was alistair king
+and his great work but i don't think
+
+492 
+00:35:17.348 --> 00:35:21.000
+that there's really a lot that's
+happened to make it accessible besides
+
+493 
+00:35:21.458 --> 00:35:26.000
+one person's serious, dedicated effort
+yeah, so that's something if we develop
+
+494 
+00:35:26.148 --> 00:35:29.000
+there the fella person we want to be
+inclusive of people back and see your
+
+495 
+00:35:29.558 --> 00:35:34.000
+can see well we just shoot a news
+diagrams we should keep to structural
+
+496 
+00:35:34.348 --> 00:35:38.000
+information that is in the code base
+rather than auxiliary document yeah, i
+
+497 
+00:35:38.268 --> 00:35:40.000
+mean and you know how this stuff is
+anyway it kind of gets out of date and
+
+498 
+00:35:40.868 --> 00:35:44.000
+whether yeah, yeah, i'm sure there are
+also a few dissertations that say, well,
+
+499 
+00:35:44.678 --> 00:35:48.000
+the jumiller grams they got outdated
+super quickly, right? Or have you read
+
+500 
+00:35:48.518 --> 00:35:52.000
+that wonderful paper by marion petrie?
+You know which one i'm talking about? No,
+
+501 
+00:35:52.828 --> 00:35:56.000
+i don't think i do what's the thing that
+i think it's called you a melon practice
+
+502 
+00:35:57.108 --> 00:36:01.000
+she basically asked the question of do
+people actually use uml? And the answer
+
+503 
+00:36:01.448 --> 00:36:07.000
+was pretty much not much yeah, so i mean
+macy paper thinking he was an ex way
+
+504 
+00:36:07.768 --> 00:36:11.000
+linked to that is shown in its look very
+related to distort it but it's a great
+
+505 
+00:36:11.278 --> 00:36:17.000
+paper, ok, so far we've talked about it
+sensibility in tools, websites and for
+
+506 
+00:36:17.118 --> 00:36:21.000
+programming environment, so talk a
+little bit about your work because you
+
+507 
+00:36:21.048 --> 00:36:26.000
+have developed a programming system that
+is inclusive off blind and visually
+
+508 
+00:36:26.018 --> 00:36:32.000
+impaired children it's only more so one
+of the observations that we made right
+
+509 
+00:36:32.448 --> 00:36:37.000
+away was that although you could do some
+work to make some of the tools or ideas
+
+510 
+00:36:37.188 --> 00:36:40.000
+or development environments accessible,
+some of the barriers that we saw
+
+511 
+00:36:40.750 --> 00:36:45.000
+students still having we're with the
+languages themselves and at the time we
+
+512 
+00:36:45.530 --> 00:36:49.000
+made this sort of really innocent had
+this sort of really innocent question,
+
+513 
+00:36:49.810 --> 00:36:55.000
+which was why two languages have that
+design anyway and what was the evidence
+
+514 
+00:36:55.770 --> 00:36:59.000
+for that decision? So for example, if
+you have a for loop in a language it's
+
+515 
+00:36:59.980 --> 00:37:04.000
+entirely reasonable that that might be
+the case but why did they use the word
+
+516 
+00:37:04.250 --> 00:37:09.000
+for and what was the evidence for that
+choice? Because it wasn't just one
+
+517 
+00:37:09.110 --> 00:37:12.000
+person that that impacted right like
+languages were used by millions of
+
+518 
+00:37:12.720 --> 00:37:16.000
+people all over the world, so we might
+expect that you could just
+
+519 
+00:37:16.690 --> 00:37:20.000
+hypothetically go to the programming
+language designed literature, look it up
+
+520 
+00:37:20.310 --> 00:37:23.000
+and figure out why they made certain
+decisions and you're also thinking about
+
+521 
+00:37:23.440 --> 00:37:28.000
+that case where you say a four loop is
+pronounced as for over brackett, i've
+
+522 
+00:37:28.720 --> 00:37:34.000
+rested russian very known you're a bull
+or old double if you have to read it by
+
+523 
+00:37:34.170 --> 00:37:38.000
+screaming, yeah, exactly so it wasn't so
+much that we thought for is bad or some
+
+524 
+00:37:38.450 --> 00:37:41.000
+other word choices it's just that we
+were sitting there watching children
+
+525 
+00:37:42.190 --> 00:37:44.000
+like you know they're fourteen they
+barely know how to use the computer
+
+526 
+00:37:44.550 --> 00:37:48.000
+they're just learning programming for
+the first time and they're like four
+
+527 
+00:37:48.560 --> 00:37:54.000
+left perrin into i and they're like, i
+have no idea what this is trying to tell
+
+528 
+00:37:54.060 --> 00:37:57.000
+me and i just made it obvious me like i
+wonder what other words you could use
+
+529 
+00:37:58.640 --> 00:38:02.000
+maybe we can look it up but when we
+looked up information the literature
+
+530 
+00:38:02.160 --> 00:38:05.000
+there wasn't any evidence of these
+things so we decided let's get some
+
+531 
+00:38:05.820 --> 00:38:10.000
+ourself so we started running like
+surveys and we started writing him at at
+
+532 
+00:38:10.050 --> 00:38:14.000
+larger scale we started running
+statistical experiments comparing
+
+533 
+00:38:14.200 --> 00:38:18.000
+competing design choices for syntax and
+i mean i'm sure it's not that surprising
+
+534 
+00:38:18.960 --> 00:38:22.000
+but a lot of times you can make stuff
+both orderly more understandable and
+
+535 
+00:38:22.410 --> 00:38:26.000
+more readable by using common sense
+terminology and getting rid of certain
+
+536 
+00:38:26.060 --> 00:38:30.000
+kinds of tokens that you use the
+scientific method to derive so for
+
+537 
+00:38:30.240 --> 00:38:35.000
+example a lupin quorum is repeat ten
+times so that the parameter in a sense
+
+538 
+00:38:35.770 --> 00:38:41.000
+that then is in the middle of keywords
+right which might be slightly unexpected
+
+539 
+00:38:41.790 --> 00:38:46.000
+for people that i used to auto correct
+but there's also other options i think
+
+540 
+00:38:46.690 --> 00:38:50.000
+there's repeat while and that works just
+like a while but the key though is that
+
+541 
+00:38:50.640 --> 00:38:54.000
+you need that were repeat because that's
+a hint toe a novice that that's what
+
+542 
+00:38:54.010 --> 00:38:58.000
+that does semantically so for example
+the word repeat implies the concept of
+
+543 
+00:38:58.440 --> 00:39:01.000
+federation so when you look at the
+statistics for how novices use those
+
+544 
+00:39:01.900 --> 00:39:06.000
+tools if that words missing it's a
+problem so one of the changes i
+
+545 
+00:39:06.300 --> 00:39:10.000
+understand it correctly that you made
+your programming languages quorum is the
+
+546 
+00:39:10.890 --> 00:39:17.000
+synth tax has to be such that words
+signifying meaning rather than being
+
+547 
+00:39:17.220 --> 00:39:23.000
+weird words like four right and also a
+lot of the punctuation has to be vetted.
+
+548 
+00:39:23.020 --> 00:39:25.000
+And the funny thing with those
+punctuation results is that something
+
+549 
+00:39:25.990 --> 00:39:30.000
+that sometimes they're kind of odd so
+like, for example, uh, this one surprise
+
+550 
+00:39:30.670 --> 00:39:34.000
+me if you look at if statements and you
+pull out the statistics for if
+
+551 
+00:39:34.320 --> 00:39:40.000
+statements java or many languages use
+parentheses on the sides and it turns
+
+552 
+00:39:40.540 --> 00:39:46.000
+out those are likely to get screwed up,
+however you you also get need to get rid
+
+553 
+00:39:46.220 --> 00:39:50.000
+of the left brace, but not the right one,
+which is sort of a bizarre decision. So
+
+554 
+00:39:50.270 --> 00:39:53.000
+in corum you haven't if and then you
+have an expression and then the word end
+
+555 
+00:39:54.020 --> 00:39:58.000
+so and it sounds sort of bizarre, but if
+you leave that left one in, it turns out
+
+556 
+00:39:58.330 --> 00:40:01.000
+that the statistical probability of
+novices getting that one correct are
+
+557 
+00:40:01.390 --> 00:40:06.000
+pretty low, so you pull it out and
+everything's fine. So instead of if open
+
+558 
+00:40:06.440 --> 00:40:10.000
+brackets something something close
+bracket you have if and then the
+
+559 
+00:40:10.970 --> 00:40:15.000
+conditions and then end, right, and then
+the other weird decision, but it turns
+
+560 
+00:40:15.980 --> 00:40:20.000
+out to be pretty impactful is a few test
+you have this question of, should i use
+
+561 
+00:40:20.360 --> 00:40:23.000
+the double equal sign or a single equals
+or triple equals or something like that?
+
+562 
+00:40:24.080 --> 00:40:28.000
+And it turns out that answer is has a
+surprisingly large effect size, so, for
+
+563 
+00:40:28.060 --> 00:40:34.000
+example if i use a programming language
+like java, perl, stuff like that and i
+
+564 
+00:40:34.170 --> 00:40:38.000
+compare, use a double equal sign if i
+use a single equal, even if i use the
+
+565 
+00:40:38.610 --> 00:40:41.000
+same symbol for assignment increases the
+probability of getting that token
+
+566 
+00:40:41.920 --> 00:40:47.000
+correct by eightfold so it's way better
+to have let me summarize that an equal
+
+567 
+00:40:47.066 --> 00:40:52.000
+sign for assignments, and also for
+comparison, oddly enough, we've we have
+
+568 
+00:40:52.926 --> 00:40:56.000
+designed test cases where we used them
+both right next to each other, to try to
+
+569 
+00:40:56.436 --> 00:41:00.000
+trick offices up, because the way we're
+thinking, if we're gonna overload it,
+
+570 
+00:41:00.136 --> 00:41:04.000
+that's got a fella p up, turns out not,
+and is this just for blankets or for all
+
+571 
+00:41:04.946 --> 00:41:08.000
+the cans, everybody, it used to be in
+corum that, like we were, we just
+
+572 
+00:41:08.266 --> 00:41:11.000
+started with blind children, but now i
+think it's something like thirty six
+
+573 
+00:41:11.556 --> 00:41:16.000
+thousand kids a year ballpark, so a lot
+more than we would have expected, so so
+
+574 
+00:41:16.766 --> 00:41:20.000
+that road considerations fur sin, thanks
+how to make syntax more inclusive, so
+
+575 
+00:41:20.966 --> 00:41:25.000
+that if you read it, it is easier to
+read, but also for other kids is more
+
+576 
+00:41:25.786 --> 00:41:30.000
+inclusive. Does your programming
+environment also have? Are you like
+
+577 
+00:41:30.646 --> 00:41:34.000
+features to specifically support
+blankets that other ideas your
+
+578 
+00:41:34.406 --> 00:41:39.000
+programming tools don't have? Yes, so
+we've change the various features that
+
+579 
+00:41:39.636 --> 00:41:43.000
+we have for the blind overtime so but
+some of them include additional
+
+580 
+00:41:43.376 --> 00:41:47.000
+navigation features that we build into
+navigators and stuff like that we have a
+
+581 
+00:41:47.716 --> 00:41:53.000
+self voicing option so sort of funny
+because screenwriters sometimes break on
+
+582 
+00:41:53.336 --> 00:41:58.000
+certain platforms which is stinky but
+reality one of the things that we allow
+
+583 
+00:41:58.376 --> 00:42:03.000
+people to do in our ideas basically turn
+off the default accessibility support
+
+584 
+00:42:03.066 --> 00:42:07.000
+turn on just a different speech engine
+which people don't like a cz much
+
+585 
+00:42:07.296 --> 00:42:11.000
+however it works everywhere and it's
+virtually guaranteed toe actually talk
+
+586 
+00:42:11.946 --> 00:42:15.000
+and that speech engine is inside of your
+programming platform pretty much yeah
+
+587 
+00:42:16.016 --> 00:42:20.000
+and it's not you know so this is a thing
+oftentimes with accessibility if you get
+
+588 
+00:42:20.136 --> 00:42:24.000
+to eighty percent and it actually works
+it's enough so in our case even though
+
+589 
+00:42:24.336 --> 00:42:27.000
+the tools that we had weren't really
+perfect at the same time was enough to
+
+590 
+00:42:27.656 --> 00:42:31.000
+bring the number of schools for the
+blind in united states that were
+
+591 
+00:42:31.526 --> 00:42:35.000
+teaching programming from basically zero
+toe about half wow, that is impressive.
+
+592 
+00:42:36.826 --> 00:42:40.000
+So what are some features that you
+consider to put into coram but didn't
+
+593 
+00:42:40.826 --> 00:42:45.000
+make the cut and for what reasons in
+terms of like language features or heidi
+
+594 
+00:42:45.634 --> 00:42:50.000
+features or things that maybe if we're
+programming we think oh, this is a good
+
+595 
+00:42:50.134 --> 00:42:54.000
+idea and you tried it and it didn't work
+we want to hear about those okay sure so
+
+596 
+00:42:54.934 --> 00:42:59.000
+if you we do a lot of experiments
+because normally form, we call it
+
+597 
+00:42:59.284 --> 00:43:03.000
+evidence based on all that really means
+is that before we change the syntax and
+
+598 
+00:43:03.024 --> 00:43:06.000
+semantics to the language and force
+every developer using it for every kid
+
+599 
+00:43:06.354 --> 00:43:11.000
+using it to relearn it, we like we run a
+test and the test is usually put people
+
+600 
+00:43:11.694 --> 00:43:15.000
+in a room have two people tried or fifty
+people tried one hundred people try it
+
+601 
+00:43:15.214 --> 00:43:18.000
+and see what happens. If it turns out
+people do pretty well, then it can go in
+
+602 
+00:43:18.824 --> 00:43:22.000
+the language, and if it turns out people
+don't do very well, then we kind of let
+
+603 
+00:43:22.674 --> 00:43:26.000
+it fall by the wayside, so we tried a
+bunch of these the one that's, the most
+
+604 
+00:43:26.684 --> 00:43:30.000
+common that has made it that is both in
+cornerman has the strongest evidentiary
+
+605 
+00:43:30.894 --> 00:43:34.000
+support for it is static type icc sounds
+like a silly thing it's, not like form,
+
+606 
+00:43:34.814 --> 00:43:39.000
+is the only language that has it, but
+the evidence is extremely clear that
+
+607 
+00:43:39.504 --> 00:43:42.000
+static typing makes developers more
+productive. If you're using a
+
+608 
+00:43:42.444 --> 00:43:47.000
+dynamically language, what happens is,
+as you go to call a function, oftentimes
+
+609 
+00:43:47.394 --> 00:43:50.000
+developers don't know what to pass to
+the function, so they go hunting for it,
+
+610 
+00:43:50.994 --> 00:43:54.000
+and it turns out in experiments that
+amount of time where they're off hunting
+
+611 
+00:43:54.804 --> 00:43:58.000
+for what to pass to a dynamically type
+function. Matches the time differences
+
+612 
+00:43:58.574 --> 00:44:02.000
+in the studies which means basically
+observation aly we have evidence that
+
+613 
+00:44:02.644 --> 00:44:07.000
+dynamic typing makes perf programmers
+slower than static typing this and this
+
+614 
+00:44:07.794 --> 00:44:11.000
+is for sided developers but i can
+imagine the effect might be even bigger
+
+615 
+00:44:11.944 --> 00:44:16.000
+for blind developers because navigation
+is such a babe big issue because for us
+
+616 
+00:44:16.774 --> 00:44:21.000
+just scrolling to function is just that
+just screwing but if you're a blanket or
+
+617 
+00:44:21.154 --> 00:44:26.000
+blind professional developer the
+navigation is is so big of a hurdle it's
+
+618 
+00:44:26.364 --> 00:44:30.000
+even worse i can imagine i've actually
+never tested it with professional blind
+
+619 
+00:44:30.504 --> 00:44:34.000
+developers but i would be very surprised
+if you were wrong i think you're right
+
+620 
+00:44:34.604 --> 00:44:40.000
+so this is a nice example off something
+that is useful for everyone no just
+
+621 
+00:44:40.654 --> 00:44:45.000
+making it inclusive for like developers
+but it's better for everyone so against
+
+622 
+00:44:45.370 --> 00:44:49.000
+the language yeah i think so i think it
+goes both ways there's there's one other
+
+623 
+00:44:49.370 --> 00:44:53.000
+that maybe maybe your listeners will be
+interested so the c plus plus standard a
+
+624 
+00:44:53.940 --> 00:44:57.000
+few years back added lambda is to the
+specifications and we were curious
+
+625 
+00:44:57.290 --> 00:45:02.000
+whether or not that had a positive or
+negative impact so we ran an empirical
+
+626 
+00:45:02.370 --> 00:45:07.000
+study in just comparing c plus plus
+lando's to it aerators which is not the
+
+627 
+00:45:07.020 --> 00:45:10.000
+only test you would need to make a
+determination but its starting point oh
+
+628 
+00:45:10.850 --> 00:45:14.000
+it was also what apparently the spect
+writers in the original white paper
+
+629 
+00:45:14.200 --> 00:45:20.000
+claimed it was for two hundred plays its
+traitors apparently so way ran a test
+
+630 
+00:45:21.070 --> 00:45:26.000
+and we compared freshman in college
+sophomores, juniors, seniors and then
+
+631 
+00:45:26.350 --> 00:45:30.000
+professional developers that we
+recruited from experts in lamb jas and
+
+632 
+00:45:30.380 --> 00:45:34.000
+we found that the experts had no benefit
+at all and it basically crushed all of
+
+633 
+00:45:34.930 --> 00:45:38.000
+the novices so it's one of these weird
+features where you know developers put
+
+634 
+00:45:38.860 --> 00:45:42.000
+something in the language and maybe it
+has a benefit but we found no evidence
+
+635 
+00:45:42.830 --> 00:45:48.000
+to that this is interesting because
+people say, oh, i like it because it has
+
+636 
+00:45:48.070 --> 00:45:53.000
+land us i mean i would say that i shall
+it so nice is that but you're saying if
+
+637 
+00:45:53.400 --> 00:45:59.000
+we measure if it helps it doesn't help
+professionals and it herds kid's a
+
+638 
+00:45:59.180 --> 00:46:03.000
+novice is under the conditions of the
+test that we ran yes and i don't think
+
+639 
+00:46:03.000 --> 00:46:07.000
+that land is versus it aerators is sort
+of the end of the story however we did
+
+640 
+00:46:07.650 --> 00:46:10.000
+sort of just take it from what the
+developers said so it's a starting point
+
+641 
+00:46:10.910 --> 00:46:14.000
+but it's possible there's other weird
+situations where it might help like
+
+642 
+00:46:14.040 --> 00:46:17.000
+event driven programming your database
+or something but those need to be
+
+643 
+00:46:17.120 --> 00:46:21.000
+verified through the scientific method
+to see if that's actually true and i
+
+644 
+00:46:21.440 --> 00:46:24.000
+think you also mentioned before not in
+the show but when we were training
+
+645 
+00:46:24.890 --> 00:46:29.000
+before that land does are specifically
+hard to be pronounced by screen reader
+
+646 
+00:46:29.400 --> 00:46:34.000
+because the order is so different from
+an incinerator oh, i don't remember
+
+647 
+00:46:34.430 --> 00:46:37.000
+saying that, but actually, that does
+make sense, it's very plausible and
+
+648 
+00:46:37.890 --> 00:46:41.000
+there's sort of a weird, wacky syntax
+and has a wacky scene. Yeah, and
+
+649 
+00:46:41.560 --> 00:46:45.000
+sometimes with that wacky syntax,
+believe or not, this especially hard for
+
+650 
+00:46:45.200 --> 00:46:49.000
+blind children, screeners don't always
+read literally, so they skipped
+
+651 
+00:46:49.015 --> 00:46:53.000
+characters. What do they skip? It seems
+horrible, all sorts of stuff, and when
+
+652 
+00:46:53.315 --> 00:46:56.000
+you think about it, that makes sense for,
+like microsoft word, because you don't
+
+653 
+00:46:56.885 --> 00:47:00.000
+want a reading every period that would
+drive you insane. So basically, what
+
+654 
+00:47:00.975 --> 00:47:03.000
+some blind farmers do is they turn on
+these verbosity modes to make sure they
+
+655 
+00:47:03.875 --> 00:47:07.000
+hear everything, but if you're blind and
+you're just starting out, you don't even
+
+656 
+00:47:07.435 --> 00:47:11.000
+know these things exist likely, and if
+you have to turn on reading every
+
+657 
+00:47:11.075 --> 00:47:14.000
+character that it gets back to annoying
+again. So it's sort of like this
+
+658 
+00:47:14.855 --> 00:47:19.000
+unfortunate sort of weird middle ground
+with syntax where it's like you could do
+
+659 
+00:47:19.675 --> 00:47:23.000
+it, but it gets in the way. Yeah,
+because some programming that was have
+
+660 
+00:47:23.395 --> 00:47:27.000
+adults for list access, and that would
+be annoying if you would be skips. I
+
+661 
+00:47:27.775 --> 00:47:32.000
+think so. Do you also take that into
+account in this insects of cora? So you
+
+662 
+00:47:32.115 --> 00:47:35.000
+you were like, oh, lesson old used old
+speakers scream readers could but don't
+
+663 
+00:47:35.865 --> 00:47:42.000
+skip oh calm actually no because we
+control the speech pipeline separately
+
+664 
+00:47:42.515 --> 00:47:45.000
+were very judicious about what
+characters the screenwriter says because
+
+665 
+00:47:45.375 --> 00:47:49.000
+we control it yeah, but i think you
+mentioned before that sometimes they use
+
+666 
+00:47:49.865 --> 00:47:53.000
+quorum with their bill in screen reader
+and then maybe yeah, we cheat there too
+
+667 
+00:47:53.995 --> 00:47:59.000
+okay? Cheat yeah, you overwrite it
+basically although we don't actually use
+
+668 
+00:47:59.155 --> 00:48:02.000
+dots to sort of one of the weird quirky
+things about form syntax that came from
+
+669 
+00:48:02.745 --> 00:48:09.000
+data but my only annoys me we found
+evidence that the dot operator isn't the
+
+670 
+00:48:09.805 --> 00:48:14.000
+operator you should use for objects for
+whatever reason surveys on it at scale
+
+671 
+00:48:14.775 --> 00:48:19.000
+show the colon operator makes more sense
+to human beings sort of drove me crazy
+
+672 
+00:48:19.495 --> 00:48:22.000
+enough that i ran a replication study at
+a different university in a different
+
+673 
+00:48:22.895 --> 00:48:26.000
+part of the country just to try to prove
+it wrong, but unfortunately it
+
+674 
+00:48:26.295 --> 00:48:30.000
+replicated with tremendous precision. So
+you're saying we shouldn't use dole's
+
+675 
+00:48:30.355 --> 00:48:36.000
+for object access oddly, which everyone
+does yes almost it's annoying but one's
+
+676 
+00:48:36.415 --> 00:48:40.000
+aaron very good no, i've never seen it.
+In fact, we kind of put it in there is a
+
+677 
+00:48:40.255 --> 00:48:43.000
+junk character we didn't think would win
+the study, but you know, i don't get to
+
+678 
+00:48:43.535 --> 00:48:49.000
+choose these things that's interesting
+sort of bizarre i'm not even exactly i
+
+679 
+00:48:49.217 --> 00:48:52.000
+have a guess, but i'm not entirely sure
+i even observe that result like for
+
+680 
+00:48:52.637 --> 00:48:57.000
+example, maybe dot just implies like the
+end of a sentence or something or maybe
+
+681 
+00:48:57.347 --> 00:49:02.000
+colin implies some kind of connected
+listers i'm not really sure but you know
+
+682 
+00:49:02.187 --> 00:49:05.000
+we did it we got the answer we
+replicated it got the same answer me
+
+683 
+00:49:05.307 --> 00:49:09.000
+whales do you d'oh interesting okay, but
+the fact that the readers read a
+
+684 
+00:49:09.707 --> 00:49:13.000
+character or or don't read character
+isn't what influence the syntax
+
+685 
+00:49:13.817 --> 00:49:17.000
+everything you put into forum is there
+because you tried it with people and you
+
+686 
+00:49:17.617 --> 00:49:21.000
+measured a result not for everything.
+When we first started the project, we
+
+687 
+00:49:21.457 --> 00:49:25.000
+were just working with kids and so think
+about it like this the very first
+
+688 
+00:49:25.477 --> 00:49:28.000
+version of corn we made a bunch of
+decisions and not all of them were
+
+689 
+00:49:28.747 --> 00:49:32.000
+evidence based because that didn't exist
+it wasn't beginning exactly and there
+
+690 
+00:49:32.807 --> 00:49:35.000
+was no such thing as an evidence
+oriented language that that did not
+
+691 
+00:49:35.867 --> 00:49:40.000
+exist, so but we found we figured out
+really quickly that we needed some
+
+692 
+00:49:40.167 --> 00:49:44.000
+evidence tto make it better. So then
+what we did is every time we made a
+
+693 
+00:49:44.037 --> 00:49:48.000
+change to the language, we started
+adjusting it over time, but there are a
+
+694 
+00:49:48.087 --> 00:49:51.000
+few decisions and corum that air left
+that we haven't run a study on yet that
+
+695 
+00:49:51.587 --> 00:49:55.000
+i think probably get invalidated hope
+one of them is we have this sort of
+
+696 
+00:49:55.587 --> 00:49:59.000
+wacky multiple inheritance system it's
+not like c plus plus is it's sort of
+
+697 
+00:49:59.667 --> 00:50:04.000
+it's this own thing but it would not
+surprise me if some day we get a study
+
+698 
+00:50:04.057 --> 00:50:07.000
+together that it could be invalidated
+but we try to do that that's sort of our
+
+699 
+00:50:07.667 --> 00:50:12.000
+goal is to sow is to run tests to
+invalidate our own choices to make them
+
+700 
+00:50:12.397 --> 00:50:19.000
+better over time so an interesting
+question there is ardor cool flits or
+
+701 
+00:50:19.187 --> 00:50:23.000
+tension between the use for a
+programming language for blind
+
+702 
+00:50:23.917 --> 00:50:29.000
+professional developers to use for
+learning blind in offices or cited in
+
+703 
+00:50:29.377 --> 00:50:36.000
+offices or learning adult developers
+mean you say we tested it on people
+
+704 
+00:50:37.217 --> 00:50:42.000
+maybe some features are really great for
+professional developers that shouldn't
+
+705 
+00:50:42.677 --> 00:50:45.000
+be in the language foreign offices i
+mean this is a little bit like that
+
+706 
+00:50:45.637 --> 00:50:49.000
+example you gave land us for experts
+they don't matter before kids they
+
+707 
+00:50:49.489 --> 00:50:55.000
+really matter so are you arguing for one
+language that's perfect for everyone or
+
+708 
+00:50:56.229 --> 00:51:00.000
+to do taylor a language that
+specifically for blind no emphasis and
+
+709 
+00:51:00.669 --> 00:51:04.000
+another language that has land lies and
+all the bells and whistles for
+
+710 
+00:51:04.129 --> 00:51:08.000
+professionals what is best there? I
+think that that's a great question and i
+
+711 
+00:51:08.139 --> 00:51:11.000
+think that even the academic community
+doesn't really know and there's a really
+
+712 
+00:51:11.909 --> 00:51:16.000
+good reason it turns out that between
+like the fifties until about two
+
+713 
+00:51:16.629 --> 00:51:21.000
+thousand twelve if you take a reasonable
+chunk of the academic literature in
+
+714 
+00:51:21.469 --> 00:51:24.000
+computer science on programming
+languages they didn't actually test with
+
+715 
+00:51:24.879 --> 00:51:29.000
+people so we don't have a consensus, and
+i say they didn't test, i mean, almost
+
+716 
+00:51:29.409 --> 00:51:35.000
+overwhelmingly, universally did not test
+specifically there's, a scholar by the
+
+717 
+00:51:35.109 --> 00:51:40.000
+name of anti hani donahoe, and he
+discovered that during that period on ly,
+
+718 
+00:51:40.819 --> 00:51:45.000
+about twenty two controlled experiments
+were conducted, and the thing is that's
+
+719 
+00:51:45.449 --> 00:51:50.000
+just not enough for us to really know.
+Now, to be more of a more direct answer,
+
+720 
+00:51:50.859 --> 00:51:53.000
+we do have evidence, like you say,
+though, that there are some features
+
+721 
+00:51:53.969 --> 00:51:57.000
+that might be in conflict between
+novices, um, professionals, one of them
+
+722 
+00:51:57.709 --> 00:52:01.000
+is, again static typing. It turns out
+most of the studies and replications
+
+723 
+00:52:01.689 --> 00:52:05.000
+that we've done or somewhere in the
+ballpark of, like yours, three of an
+
+724 
+00:52:05.119 --> 00:52:08.000
+academic program up through, like
+beginning professional, so we don't
+
+725 
+00:52:08.419 --> 00:52:11.000
+really have much good information passed
+that, and we don't have much good
+
+726 
+00:52:11.929 --> 00:52:15.000
+information about, like children or
+children with disabilities or children
+
+727 
+00:52:15.359 --> 00:52:19.000
+with, you know, men, women, all these
+different kinds of groups, and i think
+
+728 
+00:52:19.309 --> 00:52:23.000
+if we really want to flesh out whether
+or not we can make languages that find a
+
+729 
+00:52:23.499 --> 00:52:27.000
+good middle ground for everybody, we're
+going to be a heck of a lot more data
+
+730 
+00:52:27.049 --> 00:52:31.000
+from but not just for me from like, on
+entire academic community, otherwise we
+
+731 
+00:52:31.109 --> 00:52:35.000
+probably won't get there. Yes so in
+general would you say that not just for
+
+732 
+00:52:35.879 --> 00:52:40.000
+our language let's zoom out a bit again
+so tools aps websites and programming
+
+733 
+00:52:40.859 --> 00:52:45.000
+environments should they have a specific
+version for the visually impaired on a
+
+734 
+00:52:45.909 --> 00:52:50.000
+special version for sighted people like
+you have an english version in the
+
+735 
+00:52:50.059 --> 00:52:53.000
+spanish version and you get the medicine
+the same with all these programmers
+
+736 
+00:52:53.622 --> 00:52:57.000
+should there be an office programming
+experience and something val producers
+
+737 
+00:52:57.562 --> 00:53:00.000
+or should it will be the same what is
+your take on that specialize or
+
+738 
+00:53:00.982 --> 00:53:05.000
+generalized my vote is for generalized
+and you know i don't have a crystal ball
+
+739 
+00:53:05.012 --> 00:53:08.000
+so i can't know for sure but here's my
+reasoning when it comes to the first
+
+740 
+00:53:08.962 --> 00:53:13.000
+question which is specialized for the
+blind or not that one i would give a
+
+741 
+00:53:13.132 --> 00:53:17.000
+hard no and the reason is because
+sometimes when there's tools that are
+
+742 
+00:53:17.222 --> 00:53:20.000
+developed just for the blind they don't
+get maintained as well because you know
+
+743 
+00:53:20.882 --> 00:53:24.000
+a company might make more money off the
+one that's general purpose than not so
+
+744 
+00:53:24.922 --> 00:53:28.000
+that's one reason why at least i don't
+know how it is where you're from but in
+
+745 
+00:53:28.912 --> 00:53:32.000
+the united states well that's one reason
+why they make laws about making general
+
+746 
+00:53:32.032 --> 00:53:37.000
+technology accessible because they don't
+want like amazon to make like the blind
+
+747 
+00:53:37.072 --> 00:53:41.000
+reader that they maintain once and then
+don't support for fifty years yeah yeah
+
+748 
+00:53:41.712 --> 00:53:46.000
+okay you but that is a practical
+argument or maybe a capitalist arguments
+
+749 
+00:53:46.582 --> 00:53:52.000
+it's not a philosophical argument about
+what is past talk about no dural as it
+
+750 
+00:53:52.522 --> 00:53:57.000
+is now, but the world i was we will i'd
+like it to be do you think a specific
+
+751 
+00:53:57.012 --> 00:54:01.000
+app for your website for visually
+impaired that maybe mrs um features
+
+752 
+00:54:01.702 --> 00:54:06.000
+that's? Why did developers would like is
+that better journals suppose we have the
+
+753 
+00:54:06.402 --> 00:54:11.000
+money to maintain when everyone okay,
+that's a fair point? I i still think i
+
+754 
+00:54:11.212 --> 00:54:16.000
+prefer the generalist, though, and the
+reason is because a lot of the type of
+
+755 
+00:54:16.272 --> 00:54:20.000
+stuff that i was taken i d that i d does
+are things like buttons and lists and
+
+756 
+00:54:20.682 --> 00:54:24.000
+trees and stuff, and those were actually
+pretty accessible if it's there. So i do
+
+757 
+00:54:24.642 --> 00:54:28.000
+think that you can make specialized
+features in ieds that would be
+
+758 
+00:54:28.202 --> 00:54:32.000
+accessible. That would be better, though,
+so for example, i do suspect you'd want
+
+759 
+00:54:32.242 --> 00:54:35.000
+to specialize the bugger because right
+now most debugging technologies don't
+
+760 
+00:54:35.992 --> 00:54:40.000
+talk and there are known i've invented
+some talking to buggers over the years.
+
+761 
+00:54:40.222 --> 00:54:43.000
+How cool yeah, they're they're pretty
+fun, they like tell you like what
+
+762 
+00:54:43.302 --> 00:54:46.000
+variables were doing and stuff like that
+they're pretty neat the current version
+
+763 
+00:54:46.812 --> 00:54:49.000
+that we have the attacking the buggers
+not great, but i'm hoping to build some
+
+764 
+00:54:49.952 --> 00:54:54.000
+new ones in the some new projects and so
+i'm still curious about that talking the
+
+765 
+00:54:54.082 --> 00:54:58.000
+bugger how does it work and why isn't
+that great? But what are you going to
+
+766 
+00:54:58.266 --> 00:55:02.000
+add that s oh it's a little bit harder
+to build it on top of, like the j v m,
+
+767 
+00:55:02.106 --> 00:55:05.000
+javascript and other languages, which is
+what cornum compiles to a bunch of
+
+768 
+00:55:05.366 --> 00:55:09.000
+different places. So during my
+dissertation, working like the mid to
+
+769 
+00:55:09.806 --> 00:55:15.000
+thousands or so which makes me feel old
+now, okay, way had, like an interpreted
+
+770 
+00:55:15.566 --> 00:55:20.000
+version of sea that were playing around
+with and if you contract information
+
+771 
+00:55:20.646 --> 00:55:23.000
+about the state of a program and a
+little bit better way, you could make
+
+772 
+00:55:23.446 --> 00:55:26.000
+the buggers say all sorts of cool stuff,
+like saying what kind of methods are
+
+773 
+00:55:26.466 --> 00:55:30.000
+being called as you navigate instead of,
+like what line you're on, say, oh, hey,
+
+774 
+00:55:30.576 --> 00:55:34.000
+the variable a was set to five, and so
+you could give people context about
+
+775 
+00:55:34.606 --> 00:55:38.000
+what's changing in a program. Of course,
+the challenges are like, what context
+
+776 
+00:55:38.596 --> 00:55:44.000
+you give? Yeah, so let's ask it probably
+does so the stuff that we did was
+
+777 
+00:55:44.876 --> 00:55:47.000
+relatively primitive. We would just kind
+of tell you the most obvious thing like,
+
+778 
+00:55:47.966 --> 00:55:52.000
+hey, this method was called or hey, this
+variable changed, but nonetheless, even
+
+779 
+00:55:52.176 --> 00:55:56.000
+with just those changes, the studies
+that we ran were pretty obviously clear
+
+780 
+00:55:56.596 --> 00:56:00.000
+that is better than saying you're online
+five, you know which is kind of obvious
+
+781 
+00:56:00.216 --> 00:56:04.000
+but nonetheless like simple little
+things can sometimes make a big
+
+782 
+00:56:04.036 --> 00:56:07.000
+difference for accessibility, but and
+they're just not enquire meant this
+
+783 
+00:56:07.486 --> 00:56:10.000
+point for technical reasons and all
+because you don't believe they work well
+
+784 
+00:56:10.736 --> 00:56:14.000
+the second the butter yes, they kind of
+go in and out with every releases we
+
+785 
+00:56:14.086 --> 00:56:18.000
+experiment so sometimes way are building
+a new versions will pull something out
+
+786 
+00:56:18.746 --> 00:56:22.000
+for a while and are the bugger right now
+is okay, but it's nothing super special,
+
+787 
+00:56:22.906 --> 00:56:28.000
+so i can imagine these type of features
+like at the burger that talks aren't
+
+788 
+00:56:28.306 --> 00:56:33.000
+just useful for visually impaired people
+but also for sighted people. Can you
+
+789 
+00:56:33.686 --> 00:56:38.000
+give a few examples off accessibility
+features in general not just in ideas
+
+790 
+00:56:38.556 --> 00:56:43.000
+but also an absolute websites that are
+designed for visually impaired people
+
+791 
+00:56:43.306 --> 00:56:47.000
+but also can be useful for sighted
+people? I think i might have already
+
+792 
+00:56:47.516 --> 00:56:51.000
+mentioned this one, but probably the
+most obvious and easy to understand one
+
+793 
+00:56:51.416 --> 00:56:58.000
+is color contrast moves yeah, yeah, yeah,
+okay, so ah lot of the times the
+
+794 
+00:56:58.242 --> 00:57:03.000
+features that people use with
+accessibility can actually also be used
+
+795 
+00:57:03.062 --> 00:57:06.000
+by people without disabilities and one
+obvious one that that blind people use
+
+796 
+00:57:06.922 --> 00:57:10.000
+heavily and so decided people is
+keyboard shortcuts and think about it
+
+797 
+00:57:11.262 --> 00:57:13.000
+some about some of the people that i've
+known over the years that are blind
+
+798 
+00:57:13.592 --> 00:57:18.000
+don't have a monitor or a mouse way
+needed by what they needed exactly and
+
+799 
+00:57:18.812 --> 00:57:22.000
+so, like you generally navigate like
+crazy with the keyboard so if you're
+
+800 
+00:57:22.302 --> 00:57:26.000
+writing an app and you make tons of
+awesome keyboard shortcuts and waste a
+
+801 
+00:57:26.022 --> 00:57:29.000
+knave a grant around of the keyboard and
+you're an expert users you'll probably
+
+802 
+00:57:29.252 --> 00:57:33.000
+like that anyway but blind people will
+love you forever yes it's some features
+
+803 
+00:57:33.622 --> 00:57:37.000
+you met me you might make that you might
+even make them for expert usual sure
+
+804 
+00:57:37.172 --> 00:57:41.000
+like yeah, all the shortcuts and then
+they're useful for blind people but also
+
+805 
+00:57:41.532 --> 00:57:44.000
+the other way right? Yeah exactly or
+just make him for you because like you
+
+806 
+00:57:44.622 --> 00:57:48.000
+might love those things and have them
+extra and then blind are crazy about
+
+807 
+00:57:48.672 --> 00:57:53.000
+keeper shirt yeah that's the thing right
+including myself so i'm most curious in
+
+808 
+00:57:53.542 --> 00:57:57.000
+the other way around are their
+accessibility features that you can put
+
+809 
+00:57:57.362 --> 00:58:02.000
+into a tool a rupture your app that
+might hamper so your people that we
+
+810 
+00:58:02.962 --> 00:58:06.000
+sighted people would be like ways that
+there that is confusing me it's not
+
+811 
+00:58:06.792 --> 00:58:13.000
+helpful? Is that a thing or is that not?
+Um yeah, probably i mean the you know
+
+812 
+00:58:13.072 --> 00:58:16.000
+it's really easy is a developer to make
+a boo boo and make something hard to
+
+813 
+00:58:16.192 --> 00:58:20.000
+understand so a lot of the same things
+like you know if you're content is
+
+814 
+00:58:20.522 --> 00:58:26.000
+written in a funny way or your interface
+has weird color contrasts in it or the
+
+815 
+00:58:26.742 --> 00:58:33.000
+buttons air aligned in strange ways or
+ah good one might be tab order like for
+
+816 
+00:58:33.262 --> 00:58:36.000
+a sighted person that's using the
+keyboard shortcuts that they have weird
+
+817 
+00:58:36.112 --> 00:58:39.000
+tab orders so that you're flying around
+the interface in a funny way for a
+
+818 
+00:58:39.522 --> 00:58:43.000
+sighted person that's going to be odd,
+you know, like imagine like a form where
+
+819 
+00:58:43.452 --> 00:58:48.000
+it jumps to the wrong spots as you press
+tab right for you and i that because i'm
+
+820 
+00:58:48.512 --> 00:58:52.000
+a sighted person too. That would be
+really annoying for a blind person who
+
+821 
+00:58:52.072 --> 00:58:59.000
+drive them bonkers. So so we can be xer
+debated by no being able to see exactly
+
+822 
+00:58:59.482 --> 00:59:04.000
+cool. Those are all things we can take
+into going toe when making stuff for
+
+823 
+00:59:04.352 --> 00:59:08.000
+blind people but also making it
+accessible for other people. That was
+
+824 
+00:59:08.622 --> 00:59:11.000
+everything i wanted to ask. Is there
+anything you want to add anything we
+
+825 
+00:59:11.812 --> 00:59:17.000
+missed? No, i think that you have a lot
+of questions that i appreciate a whole
+
+826 
+00:59:17.522 --> 00:59:21.000
+lot of made me actually think about it
+who's gonna want to make our guests
+
+827 
+00:59:21.472 --> 00:59:25.000
+thing to make her audience. I think we
+just want to ask you one more thing if
+
+828 
+00:59:25.082 --> 00:59:28.000
+that's okay, if we want to know more
+about you, your programming language,
+
+829 
+00:59:28.862 --> 00:59:32.000
+the cool stuff you're doing, what is
+your website when we re more about you
+
+830 
+00:59:32.622 --> 00:59:37.000
+well, i think in google, andrea steph iq
+and my university website is up and i'll
+
+831 
+00:59:37.802 --> 00:59:41.000
+send you a link, but if you want to read
+more about forum, you go to korean
+
+832 
+00:59:41.762 --> 00:59:45.000
+language dot com, you want to read more
+about evidence, there's a nice little
+
+833 
+00:59:45.162 --> 00:59:48.000
+link right on the fun, and it'll give
+you a bunch of little details about how
+
+834 
+00:59:48.592 --> 00:59:51.000
+this evidence thing kind of works cool.
+We'll make sure all of those are in the
+
+835 
+00:59:51.872 --> 00:59:56.000
+show showing a school. Thank you for
+being on show thank you, thanks for
+
+836 
+00:59:56.732 --> 01:00:00.000
+listening to the radio and educational
+program brought to you by your police
+
+837 
+01:00:00.022 --> 01:00:03.000
+software magazine. For more about the
+podcast, including other episodes, visit
+
+838 
+01:00:03.932 --> 01:00:08.000
+our website at sc dash radio dot net to
+provide feedback. You can comment on
+
+839 
+01:00:08.992 --> 01:00:13.000
+each episode on the website, or reach us
+on linkedin, facebook, twitter or
+
+840 
+01:00:13.592 --> 01:00:19.000
+through our slack channel it essie radio
+dot slack dot com you can also email us
+
+841 
+01:00:19.082 --> 01:00:24.000
+a team at s c dash radio dot net thiss
+in all other episodes of s c radio is
+
+842 
+01:00:24.682 --> 01:00:28.000
+licensed under creative commons license
+two point five thanks for listening.
+

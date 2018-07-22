@@ -1,0 +1,8 @@
+/bin
+/node_modules
+*.zip
+.env
+.iml
+
+**/*.mp3
+**/*.webm
