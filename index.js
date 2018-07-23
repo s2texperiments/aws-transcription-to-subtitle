@@ -28,10 +28,15 @@ function createTimeStamp(ms) {
         }`;
 }
 
-exports.handler = async (event, {characterPerLine = 40, maxLines = 2, maxTimeInMs = 1000} = {}) => {
+exports.handler = async (event, {characterPerLine = 40, maxLines = 2, maxTimeInMs = 1000, debug = false} = {}) => {
 
-    console.log(`REQUEST: ${JSON.stringify(event)}`);
-    console.log(`CharacterPerLine: ${characterPerLine}`);
+    if (debug) {
+        console.log(`Event: ${JSON.stringify(event)}`);
+
+        console.log(`CharacterPerLine: ${characterPerLine}`);
+        console.log(`Max Lines: ${maxLines}`);
+        console.log(`Max Time in Ms: ${maxTimeInMs}`);
+    }
 
     let wordsToLineMergeRules = [
         createMaxCharacterPerLineRule(characterPerLine),
@@ -43,76 +48,77 @@ exports.handler = async (event, {characterPerLine = 40, maxLines = 2, maxTimeInM
         createMaxTimeRule(maxTimeInMs)
     ];
 
-    return 'WEBVTT\n\n' + event.results.items
-        .map((e) => ({
-            content: e.alternatives[0].content,
-            from: Math.floor(parseFloat(e.start_time) * 1000),
-            to: Math.floor(parseFloat(e.end_time)) * 1000,
-            characterCount: e.alternatives[0].content.length,
-            //pronunciation|punctuation
-            type: e.type,
-            lines: 1
-        }))
-        .reduce((acc, cur) => {
-            if (acc.length === 0) {
-                return [cur]
-            }
+    return 'WEBVTT\n\n'
+        + event.results.items
+            .map((e) => ({
+                content: e.alternatives[0].content,
+                from: Math.floor(parseFloat(e.start_time) * 1000),
+                to: Math.floor(parseFloat(e.end_time)) * 1000,
+                characterCount: e.alternatives[0].content.length,
+                //pronunciation|punctuation
+                type: e.type,
+                lines: 1
+            }))
+            .reduce((acc, cur) => {
+                if (acc.length === 0) {
+                    return [cur]
+                }
 
-            let last = acc[acc.length - 1];
+                let last = acc[acc.length - 1];
 
-            if (cur.type === 'pronunciation') {
+                if (cur.type === 'pronunciation') {
 
-                let shouldMerge = wordsToLineMergeRules
+                    let shouldMerge = wordsToLineMergeRules
+                        .reduce((shouldMerge, rule) => shouldMerge ? rule(last, cur) : false, true);
+
+                    if (shouldMerge) {
+                        acc[acc.length - 1] = Object.assign({}, last, {
+                            content: `${last.content} ${cur.content}`,
+                            to: cur.to,
+                            characterCount: last.characterCount + 1 + cur.characterCount
+                        });
+
+                        return acc;
+                    }
+                    return [...acc, cur];
+                }
+                //cur.type === 'punctuation'
+                else {
+                    acc[acc.length - 1] = Object.assign({}, last, {
+                        content: `${last.content}${cur.content}`,
+                        characterCount: last.characterCount + cur.characterCount
+                    });
+                    return acc;
+                }
+            }, [])
+            .reduce((acc, cur) => {
+                if (acc.length === 0) {
+                    return [cur];
+                }
+
+                let last = acc[acc.length - 1];
+
+                let shouldMerge = multilineMergeRules
                     .reduce((shouldMerge, rule) => shouldMerge ? rule(last, cur) : false, true);
 
                 if (shouldMerge) {
                     acc[acc.length - 1] = Object.assign({}, last, {
-                        content: `${last.content} ${cur.content}`,
+                        content: `${last.content}\n${cur.content}`,
                         to: cur.to,
-                        characterCount: last.characterCount + 1 + cur.characterCount
+                        characterCount: last.characterCount + cur.characterCount,
+                        lines: ++last.lines
                     });
-
                     return acc;
                 }
                 return [...acc, cur];
-            }
-            //cur.type === 'punctuation'
-            else {
-                acc[acc.length - 1] = Object.assign({}, last, {
-                    content: `${last.content}${cur.content}`,
-                    characterCount: last.characterCount + cur.characterCount
-                });
-                return acc;
-            }
-        }, [])
-        .reduce((acc, cur) => {
-            if (acc.length === 0) {
-                return [cur];
-            }
 
-            let last = acc[acc.length - 1];
+            }, [])
+            .reduce((acc, cur, idx) => {
 
-            let shouldMerge = multilineMergeRules
-                .reduce((shouldMerge, rule) => shouldMerge ? rule(last, cur) : false, true);
-
-            if (shouldMerge) {
-                acc[acc.length - 1] = Object.assign({}, last, {
-                    content: `${last.content}\n${cur.content}`,
-                    to: cur.to,
-                    characterCount: last.characterCount + cur.characterCount,
-                    lines: ++last.lines
-                });
-                return acc;
-            }
-            return [...acc, cur];
-
-        }, [])
-        .reduce((acc, cur, idx) => {
-
-            return [...acc,
-                `${idx + 1} \n` +
-                `${createTimeStamp(cur.from)} --> ${createTimeStamp(cur.to)}\n` +
-                `${cur.content}\n\n`];
-        }, [])
-        .join('');
+                return [...acc,
+                    `${idx + 1} \n` +
+                    `${createTimeStamp(cur.from)} --> ${createTimeStamp(cur.to)}\n` +
+                    `${cur.content}\n\n`];
+            }, [])
+            .join('');
 };
